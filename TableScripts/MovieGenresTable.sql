@@ -1,0 +1,5 @@
+CREATE TABLE dbo.MovieGenres(
+Id INT NOT NULL PRIMARY KEY,
+[Type] NVARCHAR(50) NOT NULL,
+[Synonyms] NVARCHAR(200)
+);
