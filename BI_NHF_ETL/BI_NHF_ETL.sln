@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "NetflixMoviesETL", "NetflixMoviesETL\NetflixMoviesETL.dtproj", "{8CFE93A6-DE6D-42DF-9F19-2CA9C365745E}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "NetflixUsersETL", "NetflixUsersETL\NetflixUsersETL.dtproj", "{E3CD8F88-B7DA-467D-AB4F-4699B99823B7}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "DisneyMoviesETL", "DisneyMoviesETL\DisneyMoviesETL.dtproj", "{20E3DD45-2487-4D79-ACEE-749C21D16BE5}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "MovieGenres_ETL", "MovieGenres_ETL\MovieGenres_ETL.dtproj", "{DEBEB7EA-4838-4E97-AFF6-A87112C62248}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "IntegratedShows_ETL", "IntegratedShows_ETL\IntegratedShows_ETL.dtproj", "{9C2F6E17-BABC-4DAA-8544-9B65CE57A96B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CFE93A6-DE6D-42DF-9F19-2CA9C365745E}.Development|Default.ActiveCfg = Development
+		{8CFE93A6-DE6D-42DF-9F19-2CA9C365745E}.Development|Default.Build.0 = Development
+		{E3CD8F88-B7DA-467D-AB4F-4699B99823B7}.Development|Default.ActiveCfg = Development
+		{E3CD8F88-B7DA-467D-AB4F-4699B99823B7}.Development|Default.Build.0 = Development
+		{20E3DD45-2487-4D79-ACEE-749C21D16BE5}.Development|Default.ActiveCfg = Development
+		{20E3DD45-2487-4D79-ACEE-749C21D16BE5}.Development|Default.Build.0 = Development
+		{DEBEB7EA-4838-4E97-AFF6-A87112C62248}.Development|Default.ActiveCfg = Development
+		{DEBEB7EA-4838-4E97-AFF6-A87112C62248}.Development|Default.Build.0 = Development
+		{9C2F6E17-BABC-4DAA-8544-9B65CE57A96B}.Development|Default.ActiveCfg = Development
+		{9C2F6E17-BABC-4DAA-8544-9B65CE57A96B}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4214B6EA-B381-4499-BDD1-7592655C76D3}
+	EndGlobalSection
+EndGlobal

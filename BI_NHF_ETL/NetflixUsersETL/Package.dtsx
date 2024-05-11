@@ -1,0 +1,2822 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/4/2024 10:16:32 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-9N71R1N"
+  DTS:CreatorName="DESKTOP-9N71R1N\user"
+  DTS:DTSID="{C9C0F0D9-C3F3-497F-BA1C-3918F1C5DFAD}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5397.1"
+  DTS:LocaleID="1038"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="73"
+  DTS:VersionGUID="{A6601BD8-88C6-4A1C-BB99-45CA310ADB63}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.BI_NHF]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{E54E68D8-D6A2-403C-AE8D-87BAB297A377}"
+      DTS:ObjectName="localhost.BI_NHF">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=BI_NHF;Integrated Security=True;Application Name=SSIS-Package-{E54E68D8-D6A2-403C-AE8D-87BAB297A377}localhost.BI_NHF;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.BI_NHF1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{548AB6FA-A5A0-47B2-ABCB-EF12E822BECE}"
+      DTS:ObjectName="localhost.BI_NHF1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=BI_NHF;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{548AB6FA-A5A0-47B2-ABCB-EF12E822BECE}localhost.BI_NHF1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Netflix Users File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{8F07BD05-9670-4F02-AD4A-3EB16B601796}"
+      DTS:ObjectName="Netflix Users File Connection Manager">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::FilePath]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1038"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="D:\\BME-VIK\\MsC\\3felev\\ÜzletiIntelligencia labor\\NHF\\netflix-users\\netflix-user1.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="User ID"
+              DTS:DTSID="{8CE212D6-E61C-4146-B79E-ABF21EF0658C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Subscription Type"
+              DTS:DTSID="{70D3B29A-FE0E-4D89-A117-BE56762C4B5A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Monthly Revenue"
+              DTS:DTSID="{025A7BD9-3AE0-4FBB-ACEB-C4234589F92D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Join Date"
+              DTS:DTSID="{DB970617-E5F6-4866-9940-D57986E5F725}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Last Payment Date"
+              DTS:DTSID="{16AD325B-DC82-4FDC-B1AA-6A8FC00D403C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="200"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{62D21F10-65D1-4E18-8381-57307E16BBF7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Age"
+              DTS:DTSID="{61FF44C9-A407-43CD-A26A-DC053E1F9BD3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{F991F2EF-42BC-4C14-9A79-040DD8552446}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="200"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Device"
+              DTS:DTSID="{5E474152-A29F-4454-B0FF-232EAD4D8535}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Plan Duration"
+              DTS:DTSID="{3D8170D9-AF35-4374-ABE0-D709EC437681}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[netflix-user1.csv]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{5729B259-94AB-4152-B80C-FCBAF3570F41}"
+      DTS:ObjectName="netflix-user1.csv">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::FilePath]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="D:\\BME-VIK\\MsC\\3felev\\ÜzletiIntelligencia labor\\NHF\\netflix-users\\netflix-user1.csv" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[netflix-users_archived]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{8DEFFAB6-3EBB-4174-8B9E-B2369BA6EB35}"
+      DTS:ObjectName="netflix-users_archived">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="2"
+          DTS:ConnectionString="D:\BME-VIK\MsC\3felev\ÜzletiIntelligencia labor\NHF\netflix-users_archived" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Unprocessed Users Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{07158D7D-DB8E-4AC8-A6BB-1C6AFAE26656}"
+      DTS:ObjectName="Unprocessed Users Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1038"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="D:\BME-VIK\MsC\3felev\ÜzletiIntelligencia labor\NHF\output\unprocessed_users.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="User ID"
+              DTS:DTSID="{B3C8BA1E-6639-423E-8E75-B33F945CBE5A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Subscription Type"
+              DTS:DTSID="{D2B22E10-0A54-47B4-892A-E87F08E182FF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Monthly Revenue"
+              DTS:DTSID="{4AA24BCB-519A-4680-9E3A-0C20CD82A790}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Join Date"
+              DTS:DTSID="{F0A7C75A-84E0-4D5C-840B-901D51FF7781}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Last Payment Date"
+              DTS:DTSID="{BB714CC9-3376-4F09-83AB-01586E57F8F7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="200"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{019AD3A7-D38E-4020-8E20-1F29113FE254}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Age"
+              DTS:DTSID="{933E099A-99E7-4954-9AD7-171B55FC61F0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{DC6246B9-C59C-4E2C-84B7-435B7549796C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="200"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Device"
+              DTS:DTSID="{319DDB75-1F54-4598-873D-AD8F95CAB11D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Plan Duration"
+              DTS:DTSID="{E30111F6-40AC-455E-9A70-C05BF98680B5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="JoinDateConv"
+              DTS:DTSID="{415CAB26-1654-4366-A3B2-28AF54AF7286}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LastPaymentDateConv"
+              DTS:DTSID="{1705E0A8-EE8B-406F-AB85-BAF1EFC86A8A}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{4613D1C2-0911-4587-9310-A2590B110EA7}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FilePath">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\\BME-VIK\\MsC\\3felev\\ÜzletiIntelligencia labor\\NHF\\netflix-users\\netflix-user1.csv</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Iterate New User Files"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{012D959F-D3E1-42F5-A605-FEE0DB74FDE6}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Iterate New User Files">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachFileEnumerator"
+        DTS:DTSID="{2C9D0BFC-7D8A-4D49-8875-2495CE4C334B}"
+        DTS:ObjectName="{2C9D0BFC-7D8A-4D49-8875-2495CE4C334B}">
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="D:\BME-VIK\MsC\3felev\ÜzletiIntelligencia labor\NHF\netflix-users" />
+            <FEFEProperty
+              FileSpec="*.csv" />
+            <FEFEProperty
+              FileNameRetrievalType="0" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Iterate New User Files\Manage Netflix Users"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{C8D3F87D-6844-45C7-A6F4-835AD3B262A6}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Manage Netflix Users"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination"
+                  componentClassID="Microsoft.ManagedComponentHost"
+                  contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+                  description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+                  name="ADO NET Destination"
+                  usesDispositions="true"
+                  version="2">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="The Destination database table name."
+                      expressionType="Notify"
+                      name="TableOrViewName"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."NetflixUsers"</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                      expressionType="Notify"
+                      name="BatchSize">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                      expressionType="Notify"
+                      name="CommandTimeout">30</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                      expressionType="Notify"
+                      name="UseBulkInsertWhenPossible">true</property>
+                    <property
+                      dataType="System.String"
+                      name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Connections[IDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[localhost.BI_NHF]"
+                      connectionManagerRefId="Package.ConnectionManagers[localhost.BI_NHF]"
+                      description="Managed connection manager"
+                      name="IDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input]"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="ADO NET Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Country]"
+                          cachedDataType="wstr"
+                          cachedLength="200"
+                          cachedName="Country"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Country]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Country]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Age]"
+                          cachedDataType="i2"
+                          cachedName="Age"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Age]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Age]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Gender]"
+                          cachedDataType="wstr"
+                          cachedLength="20"
+                          cachedName="Gender"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Gender]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Gender]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Device]"
+                          cachedDataType="wstr"
+                          cachedLength="200"
+                          cachedName="Device"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Device]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Device]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[User ID]"
+                          cachedDataType="i4"
+                          cachedName="User ID"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Id]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[User ID]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Subscription Type]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Subscription Type"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[SubscriptionType]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Subscription Type]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Monthly Revenue]"
+                          cachedDataType="i4"
+                          cachedName="Monthly Revenue"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[MonthlyRevenue]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Monthly Revenue]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[JoinDateConv]"
+                          cachedDataType="date"
+                          cachedName="JoinDateConv"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[JoinDate]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Convert Dates.Outputs[Output 0].Columns[JoinDateConv]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[LastPaymentDateConv]"
+                          cachedDataType="date"
+                          cachedName="LastPaymentDateConv"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[LastPaymentDate]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Convert Dates.Outputs[Output 0].Columns[LastPaymentDateConv]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Plan Duration]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Plan Duration"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PlanDuration]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Plan Duration]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Id]"
+                          dataType="i4"
+                          name="Id" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[SubscriptionType]"
+                          dataType="wstr"
+                          length="50"
+                          name="SubscriptionType" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[MonthlyRevenue]"
+                          dataType="i4"
+                          name="MonthlyRevenue" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[JoinDate]"
+                          dataType="dbTimeStamp"
+                          name="JoinDate" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[LastPaymentDate]"
+                          dataType="dbTimeStamp"
+                          name="LastPaymentDate" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Country]"
+                          dataType="wstr"
+                          length="200"
+                          name="Country" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Age]"
+                          dataType="i2"
+                          name="Age" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Gender]"
+                          dataType="wstr"
+                          length="20"
+                          name="Gender" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Device]"
+                          dataType="wstr"
+                          length="200"
+                          name="Device" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PlanDuration]"
+                          dataType="wstr"
+                          length="50"
+                          name="PlanDuration" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Outputs[ADO NET Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="ADO NET Destination Error Output"
+                      synchronousInputId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Iterate New User Files\Manage Netflix Users\Conditional Split"
+                  componentClassID="Microsoft.ConditionalSplit"
+                  contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+                  name="Conditional Split"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Iterate New User Files\Manage Netflix Users\Conditional Split.Inputs[Conditional Split Input]"
+                      description="Input to the Conditional Split Transformation"
+                      name="Conditional Split Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Conditional Split.Inputs[Conditional Split Input].Columns[User ID]"
+                          cachedDataType="i4"
+                          cachedName="User ID"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[User ID]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Conditional Split.Inputs[Conditional Split Input].Columns[Subscription Type]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Subscription Type"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Subscription Type]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Conditional Split.Inputs[Conditional Split Input].Columns[Age]"
+                          cachedDataType="i2"
+                          cachedName="Age"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Age]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Iterate New User Files\Manage Netflix Users\Conditional Split.Outputs[Required Fields missing]"
+                      description="Output 1 of the Conditional Split Transformation"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      exclusionGroup="1"
+                      name="Required Fields missing"
+                      synchronousInputId="Package\Iterate New User Files\Manage Netflix Users\Conditional Split.Inputs[Conditional Split Input]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                          name="Expression">[ISNULL](#{Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[User ID]}) || #{Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Subscription Type]} == "" || [ISNULL](#{Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Age]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the friendly version of the expression. This expression version uses column names."
+                          expressionType="Notify"
+                          name="FriendlyExpression">ISNULL([User ID]) || [Subscription Type] == "" || ISNULL(Age)</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                          name="EvaluationOrder">0</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Iterate New User Files\Manage Netflix Users\Conditional Split.Outputs[Ok]"
+                      description="Default Output of the Conditional Split Transformation"
+                      exclusionGroup="1"
+                      name="Ok"
+                      synchronousInputId="Package\Iterate New User Files\Manage Netflix Users\Conditional Split.Inputs[Conditional Split Input]">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          name="IsDefaultOut">true</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Iterate New User Files\Manage Netflix Users\Conditional Split.Outputs[Conditional Split Error Output]"
+                      description="Error Output of the Conditional Split Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Conditional Split Error Output"
+                      synchronousInputId="Package\Iterate New User Files\Manage Netflix Users\Conditional Split.Inputs[Conditional Split Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Iterate New User Files\Manage Netflix Users\Convert Dates"
+                  componentClassID="Microsoft.ManagedComponentHost"
+                  contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;13"
+                  description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
+                  name="Convert Dates"
+                  version="13">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Stores the source code of the component"
+                      isArray="true"
+                      name="SourceCode"
+                      state="cdata">
+                      <arrayElements
+                        arrayElementCount="30">
+                        <arrayElement
+                          dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services component wrapper
+*  This module defines the base class for your component
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+
+public class UserComponent: ScriptComponent
+{
+    public Connections Connections;
+    public Variables Variables;
+    public UserComponent()
+    {
+        Connections = new Connections(this);
+        Variables = new Variables(this);
+    }
+
+    public override void ProcessInput(int InputID, string InputName, PipelineBuffer Buffer, OutputNameMap OutputMap)
+    {
+
+        if (InputName.Equals(@"Input 0", StringComparison.Ordinal))
+        {
+            Input0_ProcessInput(new Input0Buffer(Buffer, GetColumnIndexes(InputID), OutputMap));
+        }
+
+    }
+
+    public virtual void Input0_ProcessInput(Input0Buffer Buffer)
+    {
+        while (Buffer.NextRow())
+        {
+            Input0_ProcessInputRow(Buffer);
+        }
+    }
+
+    public virtual void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+    }
+
+}
+
+public class Connections
+{
+    ScriptComponent ParentComponent;
+
+    public Connections(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+
+public class Variables
+{
+    ScriptComponent ParentComponent;
+
+    public Variables(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[main.cs]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[#region Help:  Introduction to the Script Component
+/* The Script Component allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services data flow.
+ *
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script component. */
+#endregion
+
+#region Namespaces
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+#endregion
+
+/// <summary>
+/// This is the class to which to add your code.  Do not change the name, attributes, or parent
+/// of this class.
+/// </summary>
+[Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute]
+public class ScriptMain : UserComponent
+{
+    #region Help:  Using Integration Services variables and parameters
+    /* To use a variable in this script, first ensure that the variable has been added to
+     * either the list contained in the ReadOnlyVariables property or the list contained in
+     * the ReadWriteVariables property of this script component, according to whether or not your
+     * code needs to write into the variable.  To do so, save this script, close this instance of
+     * Visual Studio, and update the ReadOnlyVariables and ReadWriteVariables properties in the
+     * Script Transformation Editor window.
+     * To use a parameter in this script, follow the same steps. Parameters are always read-only.
+     *
+     * Example of reading from a variable or parameter:
+     *  DateTime startTime = Variables.MyStartTime;
+     *
+     * Example of writing to a variable:
+     *  Variables.myStringVariable = "new value";
+     */
+    #endregion
+
+    #region Help:  Using Integration Services Connnection Managers
+    /* Some types of connection managers can be used in this script component.  See the help topic
+     * "Working with Connection Managers Programatically" for details.
+     *
+     * To use a connection manager in this script, first ensure that the connection manager has
+     * been added to either the list of connection managers on the Connection Managers page of the
+     * script component editor.  To add the connection manager, save this script, close this instance of
+     * Visual Studio, and add the Connection Manager to the list.
+     *
+     * If the component needs to hold a connection open while processing rows, override the
+     * AcquireConnections and ReleaseConnections methods.
+     * 
+     * Example of using an ADO.Net connection manager to acquire a SqlConnection:
+     *  object rawConnection = Connections.SalesDB.AcquireConnection(transaction);
+     *  SqlConnection salesDBConn = (SqlConnection)rawConnection;
+     *
+     * Example of using a File connection manager to acquire a file path:
+     *  object rawConnection = Connections.Prices_zip.AcquireConnection(transaction);
+     *  string filePath = (string)rawConnection;
+     *
+     * Example of releasing a connection manager:
+     *  Connections.SalesDB.ReleaseConnection(rawConnection);
+     */
+    #endregion
+
+    #region Help:  Firing Integration Services Events
+    /* This script component can fire events.
+     *
+     * Example of firing an error event:
+     *  ComponentMetaData.FireError(10, "Process Values", "Bad value", "", 0, out cancel);
+     *
+     * Example of firing an information event:
+     *  ComponentMetaData.FireInformation(10, "Process Values", "Processing has started", "", 0, fireAgain);
+     *
+     * Example of firing a warning event:
+     *  ComponentMetaData.FireWarning(10, "Process Values", "No rows were received", "", 0);
+     */
+    #endregion
+
+    /// <summary>
+    /// This method is called once for every row that passes through the component from Input0.
+    ///
+    /// Example of reading a value from a column in the the row:
+    ///  string zipCode = Row.ZipCode
+    ///
+    /// Example of writing a value to a column in the row:
+    ///  Row.ZipCode = zipCode
+    /// </summary>
+    /// <param name="Row">The row that is currently passing through the component</param>
+    public override void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+
+        if (DateTime.TryParseExact(Row.JoinDate, "dd-MM-yy", null, System.Globalization.DateTimeStyles.None, out var joinDate))
+        {
+            Row.JoinDateConv = joinDate;
+        }
+        else
+        {
+            Row.JoinDateConv_IsNull = true;
+        }
+
+        if (DateTime.TryParseExact(Row.LastPaymentDate, "dd-MM-yy", null, System.Globalization.DateTimeStyles.None, out var lastPayment))
+        {
+            Row.LastPaymentDateConv = lastPayment;
+        }
+        else
+        {
+            Row.LastPaymentDateConv_IsNull = true;
+        }
+    }
+
+}
+]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[BufferWrapper.cs]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services buffer wrappers
+*  This module defines classes for accessing data flow buffers
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+
+public class Input0Buffer: ScriptBuffer
+
+{
+    public Input0Buffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+        : base(Buffer, BufferColumnIndexes, OutputMap)
+    {
+    }
+
+    public String JoinDate
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[0]);
+        }
+    }
+    public bool JoinDate_IsNull
+    {
+        get
+        {
+            return IsNull(0);
+        }
+    }
+
+    public String LastPaymentDate
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[1]);
+        }
+    }
+    public bool LastPaymentDate_IsNull
+    {
+        get
+        {
+            return IsNull(1);
+        }
+    }
+
+    public DateTime JoinDateConv
+    {
+        set
+        {
+            this[2] = value;
+        }
+    }
+    public bool JoinDateConv_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(2);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public DateTime LastPaymentDateConv
+    {
+        set
+        {
+            this[3] = value;
+        }
+    }
+    public bool LastPaymentDateConv_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(3);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    new public bool NextRow()
+    {
+        return base.NextRow();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_baa56d8cc14b44438e4315c7393453f5.Properties.Settings.get_Default():SC_baa56d8cc14b44438e4315c7393453f5.Properties.Sett" +
+    "ings")]
+
+namespace SC_baa56d8cc14b44438e4315c7393453f5.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[SC_baa56d8cc14b44438e4315c7393453f5.csproj]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{de406623-3b3b-42bd-8593-0fdd380ffc47}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SC_baa56d8cc14b44438e4315c7393453f5</RootNamespace>
+    <AssemblyName>SC_63CE0A5A306048238E78365617401BA1</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.TxScript, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Compile Include="main.cs" />
+    <Compile Include="BufferWrapper.cs" />
+    <Compile Include="ComponentWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="ScriptComponent" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
+        <Host Name="ScriptComponent" GeneratedNamespace="SC_baa56d8cc14b44438e4315c7393453f5" IconIndex="0"></Host>
+        <ProjectClient>
+          <HostIdentifier>SSIS_SC160</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[Project]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>SC_baa56d8cc14b44438e4315c7393453f5</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>SC_baa56d8cc14b44438e4315c7393453f5</msb:DisplayName>
+    <msb:ProjectId>{7DBCDD05-9989-4B54-8BC6-2E0EFCD8D0EC}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="SC_baa56d8cc14b44438e4315c7393453f5.csproj" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="main.cs" />
+    <msb:File Include="BufferWrapper.cs" />
+    <msb:File Include="ComponentWrapper.cs" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("SC_baa56d8cc14b44438e4315c7393453f5")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SC_baa56d8cc14b44438e4315c7393453f5")]
+[assembly: AssemblyCopyright("Copyright @  2024")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.0.0")]
+]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[Properties\Resources.Designer.cs]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_baa56d8cc14b44438e4315c7393453f5.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_baa56d8cc14b44438e4315c7393453f5.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_baa56d8cc14b44438e4315c7393453f5.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace SC_baa56d8cc14b44438e4315c7393453f5.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_baa56d8cc14b44438e4315c7393453f5.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                      </arrayElements>
+                    </property>
+                    <property
+                      dataType="System.String"
+                      description="Stores the binary representation of the component"
+                      isArray="true"
+                      name="BinaryCode"
+                      state="cdata">
+                      <arrayElements
+                        arrayElementCount="2">
+                        <arrayElement
+                          dataType="System.String"><![CDATA[SC_63CE0A5A306048238E78365617401BA1.dll]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAGYVGGYAAAAAAAAAAOAAIiALATAAABQAAAAIAAAAAAAAPjMA
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAOwyAABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAARBMAAAAgAAAAFAAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAWAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAHAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAAg
+MwAAAAAAAEgAAAACAAUALCIAAAgQAAABAAAAAAAAADQyAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAABMwBQBMAAAAAQAAEQNvBAAABnIBAABwFBYSACgQAAAKLAkD
+Bm8IAAAGKwcDF28JAAAGA28GAAAGcgEAAHAUFhIBKBAAAAosCAMHbwoAAAYqAxdvCwAABioeAigO
+AAAGKioCAwQFKBEAAAoqUgJ7EgAACgJ7EwAAChaUbxQAAAoqIgIWKBUAAAoqUgJ7EgAACgJ7EwAA
+CheUbxQAAAoqIgIXKBUAAAoqOgIYA4wOAAABKBYAAAoqWgMsCAIYKBcAAAoqchMAAHBzGAAACno6
+AhkDjA4AAAEoFgAACipaAywIAhkoFwAACipyEwAAcHMYAAAKeh4CKBkAAAoqHgIoGgAACip+Aigb
+AAAKAgJzEgAABn0BAAAEAgJzEwAABn0CAAAEKpIEcrAAAHAabxwAAAosFQIFAgMoHQAACg4EcwMA
+AAZvEAAABipKKwcCA28RAAAGA28MAAAGLfEqBio6AigeAAAKAgN9AwAABCo6AigeAAAKAgN9BAAA
+BCoeAigeAAAKKq5+BQAABC0ecsAAAHDQBwAAAigfAAAKbyAAAApzIQAACoAFAAAEfgUAAAQqGn4G
+AAAEKh4CgAYAAAQqGn4HAAAEKh4CKCIAAAoqLnMZAAAGgAcAAAQqAAAAQlNKQgEAAQAAAAAADAAA
+AHY0LjAuMzAzMTkAAAAABQBsAAAA0AUAACN+AAA8BgAAxAYAACNTdHJpbmdzAAAAAAANAAA0AQAA
+I1VTADQOAAAQAAAAI0dVSUQAAABEDgAAxAEAACNCbG9iAAAAAAAAAAIAAAFXFaIBCQEAAAD6ATMA
+FgAAAQAAACIAAAAIAAAABwAAABoAAAARAAAAIgAAABAAAAABAAAAAwAAAAsAAAAMAAAAAQAAAAQA
+AAABAAAAAAAAAwEAAAAAAAYADgK1BAYAogK1BAYAWgGiBA8AKQUAAAYAhwHnAwYA8QHnAwYA0gHn
+AwYAiQLnAwYALgLnAwYARwLnAwYAngHnAwYAuQHGAgoAYgKGAAYAfQCfAwoAdASGAA4AZQSGAAoA
+MASGAAoADAaGAAYAzwWfAwYAPQGiBAYAhQTVBAYAJATSAxIADQHqAhIAbgHqAhIA1AC9AwYAIgG1
+BAYASASfAwYAcQXSAwYA+QOfAwYA4wKfAwYAEwSfAwYApwCfAwYATwCfAwYAugbnAwAAAAAlAAAA
+AAABAAEAAQAQALIDAAAQAAEAAQABABAAWAQAAD0AAQADAAEAEADuBQAASQABAA4AAQAQALUFAABN
+AAMAEgABABAAZwUAAE0ABAATAAAAEADcBDgFTQAFABQAAAEQAKUFOAVlAAcAGAAGALUFiwAGAGcF
+jwABAPwFkwABAPwFkwARAKYDlwARAMQAmwARAD8AnwBQIAAAAADGAJcGowABAKggAAAAAIYYlQQG
+AAIAsCAAAAAAhhiVBC8AAgC7IAAAAACGCOwAqQAFANAgAAAAAIYIKANRAAUA2SAAAAAAhgj5AKkA
+BQDuIAAAAACGCDwDUQAFAPcgAAAAAIYIbgatAAUABiEAAAAAhghXA7MABgAdIQAAAACGCH8GrQAH
+ACwhAAAAAIYIbwOzAAgAQyEAAAAAhgCuBlEACQBLIQAAAACGANYFUQAJAFMhAAAAAIYYlQQGAAkA
+cyEAAAAAxgBhBrgACQCYIQAAAADGAVoGowANAKshAAAAAMYBlwajAA4ArSEAAAAAhhiVBMIADwC8
+IQAAAACGGJUEwgAQAMshAAAAAIMYlQQGABEA0yEAAAAAkwiBBMgAEQD/IQAAAACTCKwAzQARAAYi
+AAAAAJMIuADSABEADiIAAAAAlgjiBdgAEgAVIgAAAACGGJUEBgASAB0iAAAAAJEYmwTdABIAAAAB
+ALIGAAABAHoEAAACAIAFAAADAD4EAAABAMACAAABAMACAAABAMACAAABAMACAAABAC4AAAACAHMA
+AAADAHoEAAAEAD4EAAABAHoEAAABALIGAAABABIGAAABABIGAAABAMACCQCVBAEAEQCVBAYAGQCV
+BAoAKQCVBBAAMQCVBBAAOQCVBBAAQQCVBBAASQCVBBAAUQCVBBAAWQCVBBAAYQCVBBAAaQCVBAYA
+oQCVBAYAwQCVBBUA0QCVBAYAcQDBBSIAeQCVBC8AeQB6BDkAeQCABT0AgQDgAkEAeQCHA0YAeQCW
+A0sAeQCOAwEA6QCVBBAAeQCuBlEAeQDWBVEAkQCVBAYA8QCuBVUAkQCUBVwAmQCVBAYAAQFhAGIA
+AQG2BmsAqQCVBHEAyQCVBAYALgALAP0ALgATAAYBLgAbACUBLgAjAC4BLgArAFcBLgAzAFcBLgA7
+AFcBLgBDAC4BLgBLAF0BLgBTAFcBLgBbAHQBQwBjAL4B4QB7AL4B4wBrAL4BKQFzACUBSQFzACUB
+GwADAAEABwAJAAgACwAAAPAA4QAAACwD5QAAAP0A4QAAAEAD5QAAAHIG6QAAAFsD5QAAAIMG6QAA
+AHMD5QAAAIUE7gAAAMwA8wAAAOYF+AACAAQAAwACAAUABQACAAYABwACAAcACQABAAgACwABAAkA
+DQABAAoADwABAAsAEQACABUAEwACABYAFQABABcAFQACABgAFwAEgAAAAQAAAAAAAAAAAAAAAAAB
+AAAABAAAAAAAAAAAAAAAeQA2AAAAAAAQAAAAAAAAAAAAAACCABwGAAAAABAAAAAAAAAAAAAAAIIA
+OQYAAAAABAAAAAAAAAAAAAAAeQCfAwAAAAAAAAAAAQAAAOYEAAAAAAAAAFNDXzYzQ0UwQTVBMzA2
+MDQ4MjM4RTc4MzY1NjE3NDAxQkExADxNb2R1bGU+AElucHV0SUQAbXNjb3JsaWIAZGVmYXVsdElu
+c3RhbmNlAFJ1bnRpbWVUeXBlSGFuZGxlAEdldFR5cGVGcm9tSGFuZGxlAElucHV0TmFtZQBEYXRl
+VGltZQBNaWNyb3NvZnQuU3FsU2VydmVyLkR0cy5QaXBlbGluZQBUeXBlAGdldF9DdWx0dXJlAHNl
+dF9DdWx0dXJlAHJlc291cmNlQ3VsdHVyZQBBcHBsaWNhdGlvblNldHRpbmdzQmFzZQBnZXRfSm9p
+bkRhdGUAZ2V0X0xhc3RQYXltZW50RGF0ZQBFZGl0b3JCcm93c2FibGVTdGF0ZQBDb21waWxlckdl
+bmVyYXRlZEF0dHJpYnV0ZQBEZWJ1Z2dlck5vblVzZXJDb2RlQXR0cmlidXRlAERlYnVnZ2FibGVB
+dHRyaWJ1dGUARWRpdG9yQnJvd3NhYmxlQXR0cmlidXRlAEFzc2VtYmx5VGl0bGVBdHRyaWJ1dGUA
+QXNzZW1ibHlUcmFkZW1hcmtBdHRyaWJ1dGUAVGFyZ2V0RnJhbWV3b3JrQXR0cmlidXRlAEFzc2Vt
+Ymx5Q29uZmlndXJhdGlvbkF0dHJpYnV0ZQBBc3NlbWJseURlc2NyaXB0aW9uQXR0cmlidXRlAENv
+bXBpbGF0aW9uUmVsYXhhdGlvbnNBdHRyaWJ1dGUAQXNzZW1ibHlQcm9kdWN0QXR0cmlidXRlAEFz
+c2VtYmx5Q29weXJpZ2h0QXR0cmlidXRlAFNTSVNTY3JpcHRDb21wb25lbnRFbnRyeVBvaW50QXR0
+cmlidXRlAEFzc2VtYmx5Q29tcGFueUF0dHJpYnV0ZQBSdW50aW1lQ29tcGF0aWJpbGl0eUF0dHJp
+YnV0ZQB2YWx1ZQBTeXN0ZW0uUnVudGltZS5WZXJzaW9uaW5nAEdldFN0cmluZwBTeXN0ZW0uQ29t
+cG9uZW50TW9kZWwAU0NfNjNDRTBBNUEzMDYwNDgyMzhFNzgzNjU2MTc0MDFCQTEuZGxsAGdldF9K
+b2luRGF0ZV9Jc051bGwAZ2V0X0xhc3RQYXltZW50RGF0ZV9Jc051bGwAc2V0X0pvaW5EYXRlQ29u
+dl9Jc051bGwAc2V0X0xhc3RQYXltZW50RGF0ZUNvbnZfSXNOdWxsAFNldE51bGwAc2V0X0l0ZW0A
+U3lzdGVtAHJlc291cmNlTWFuAFNjcmlwdE1haW4AU3lzdGVtLkNvbmZpZ3VyYXRpb24AU3lzdGVt
+Lkdsb2JhbGl6YXRpb24AU3lzdGVtLlJlZmxlY3Rpb24ASW52YWxpZE9wZXJhdGlvbkV4Y2VwdGlv
+bgBTdHJpbmdDb21wYXJpc29uAEN1bHR1cmVJbmZvAE91dHB1dE5hbWVNYXAAT3V0cHV0TWFwAElG
+b3JtYXRQcm92aWRlcgBJbnB1dDBCdWZmZXIAUGlwZWxpbmVCdWZmZXIAU2NyaXB0QnVmZmVyAGdl
+dF9SZXNvdXJjZU1hbmFnZXIALmN0b3IALmNjdG9yAFN5c3RlbS5EaWFnbm9zdGljcwBTeXN0ZW0u
+UnVudGltZS5Db21waWxlclNlcnZpY2VzAFN5c3RlbS5SZXNvdXJjZXMAU0NfYmFhNTZkOGNjMTRi
+NDQ0MzhlNDMxNWM3MzkzNDUzZjUuUHJvcGVydGllcy5SZXNvdXJjZXMucmVzb3VyY2VzAERlYnVn
+Z2luZ01vZGVzAFNDX2JhYTU2ZDhjYzE0YjQ0NDM4ZTQzMTVjNzM5MzQ1M2Y1LlByb3BlcnRpZXMA
+VmFyaWFibGVzAERhdGVUaW1lU3R5bGVzAEJ1ZmZlckNvbHVtbkluZGV4ZXMAR2V0Q29sdW1uSW5k
+ZXhlcwBTZXR0aW5ncwBFcXVhbHMAQ29ubmVjdGlvbnMAVHJ5UGFyc2VFeGFjdABPYmplY3QARW5k
+T2ZSb3dzZXQAZ2V0X0RlZmF1bHQAVXNlckNvbXBvbmVudABQYXJlbnRDb21wb25lbnQAU2NyaXB0
+Q29tcG9uZW50AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuVHhTY3JpcHQATWljcm9zb2Z0LlNxbFNlcnZl
+ci5QaXBlbGluZUhvc3QASW5wdXQwX1Byb2Nlc3NJbnB1dABzZXRfSm9pbkRhdGVDb252AHNldF9M
+YXN0UGF5bWVudERhdGVDb252AElucHV0MF9Qcm9jZXNzSW5wdXRSb3cATmV4dFJvdwBnZXRfQXNz
+ZW1ibHkAAAARZABkAC0ATQBNAC0AeQB5AAGAm0kAcwBOAHUAbABsACAAcAByAG8AcABlAHIAdAB5
+ACAAYwBhAG4AbgBvAHQAIABiAGUAIABzAGUAdAAgAHQAbwAgAEYAYQBsAHMAZQAuACAAQQBzAHMA
+aQBnAG4AIABhACAAdgBhAGwAdQBlACAAdABvACAAdABoAGUAIABjAG8AbAB1AG0AbgAgAGkAbgBz
+AHQAZQBhAGQALgAAD0kAbgBwAHUAdAAgADAAAHFTAEMAXwBiAGEAYQA1ADYAZAA4AGMAYwAxADQA
+YgA0ADQANAAzADgAZQA0ADMAMQA1AGMANwAzADkAMwA0ADUAMwBmADUALgBQAHIAbwBwAGUAcgB0
+AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAAAAAhIBFx5XFOki+9Xjr25ZuCgAEIAEBCAMgAAEF
+IAEBEREEIAEBDgUgAQERXQYHAhE5ETkMAAUCDg4SbRFxEBE5CSADARJBHQgSRQMGEkEDBh0IBCAB
+DggEIAECCAUgAgEIHAMgAAIGIAICDhF9BSABHQgICAABEoCBEYCFBSAAEoCJByACAQ4SgIkIt3pc
+Vhk04IkIiYRdzYCAzJEDBhIUAwYSGAMGEkkDBhJVAwYSWQMGEiAFIAEBEgwDIAAOBSABARE5BCAB
+AQIJIAQBCA4SQRJFBSABARJJBAAAElUEAAASWQUAAQESWQQAABIgAwAAAQMoAA4DKAACBCgAETkE
+CAASVQQIABJZBAgAEiAIAQAIAAAAAAAeAQABAFQCFldyYXBOb25FeGNlcHRpb25UaHJvd3MBCAEA
+AgAAAAAAKAEAI1NDX2JhYTU2ZDhjYzE0YjQ0NDM4ZTQzMTVjNzM5MzQ1M2Y1AAAFAQAAAAAWAQAR
+Q29weXJpZ2h0IEAgIDIwMjQAAEkBABouTkVURnJhbWV3b3JrLFZlcnNpb249djQuNwEAVA4URnJh
+bWV3b3JrRGlzcGxheU5hbWUSLk5FVCBGcmFtZXdvcmsgNC43BAEAAAAAtAAAAM7K774BAAAAkQAA
+AGxTeXN0ZW0uUmVzb3VyY2VzLlJlc291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAu
+MC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkjU3lz
+dGVtLlJlc291cmNlcy5SdW50aW1lUmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQQURQtAAAABQz
+AAAAAAAAAAAAAC4zAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgMwAAAAAAAAAAAAAAAF9Db3JE
+bGxNYWluAG1zY29yZWUuZGxsAAAAAAD/JQAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAQAQAAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAA
+SAAAAFhAAADsAwAAAAAAAAAAAADsAzQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAA
+AAAAvQTv/gAAAQAAAAEAAAAAAAAAAQAAAAAAPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQA
+AAABAFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBu
+AAAAAAAAALAETAMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAAKAMAAAEAMAAwADAA
+MAAwADQAYgAwAAAAGgABAAEAQwBvAG0AbQBlAG4AdABzAAAAAAAAACIAAQABAEMAbwBtAHAAYQBu
+AHkATgBhAG0AZQAAAAAAAAAAAHAAJAABAEYAaQBsAGUARABlAHMAYwByAGkAcAB0AGkAbwBuAAAA
+AABTAEMAXwBiAGEAYQA1ADYAZAA4AGMAYwAxADQAYgA0ADQANAAzADgAZQA0ADMAMQA1AGMANwAz
+ADkAMwA0ADUAMwBmADUAAAAwAAgAAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4A
+MAAuADAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAQwBfADYAMwBDAEUAMABB
+ADUAQQAzADAANgAwADQAOAAyADMAOABFADcAOAAzADYANQA2ADEANwA0ADAAMQBCAEEAMQAuAGQA
+bABsAAAASAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAAQwBvAHAAeQByAGkAZwBo
+AHQAIABAACAAIAAyADAAMgA0AAAAKgABAAEATABlAGcAYQBsAFQAcgBhAGQAZQBtAGEAcgBrAHMA
+AAAAAAAAAAB4ACgAAQBPAHIAaQBnAGkAbgBhAGwARgBpAGwAZQBuAGEAbQBlAAAAUwBDAF8ANgAz
+AEMARQAwAEEANQBBADMAMAA2ADAANAA4ADIAMwA4AEUANwA4ADMANgA1ADYAMQA3ADQAMAAxAEIA
+QQAxAC4AZABsAGwAAABoACQAAQBQAHIAbwBkAHUAYwB0AE4AYQBtAGUAAAAAAFMAQwBfAGIAYQBh
+ADUANgBkADgAYwBjADEANABiADQANAA0ADMAOABlADQAMwAxADUAYwA3ADMAOQAzADQANQAzAGYA
+NQAAADQACAABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAA4
+AAgAAQBBAHMAcwBlAG0AYgBsAHkAIABWAGUAcgBzAGkAbwBuAAAAMQAuADAALgAwAC4AMAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAAQDMAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
+                      </arrayElements>
+                    </property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
+                      name="VSTAProjectName"
+                      typeConverter="NOTBROWSABLE">SC_63ce0a5a306048238e78365617401ba1</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the programming language used by the script."
+                      name="ScriptLanguage"
+                      typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages">CSharp</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies a comma-separated list of read-only variables."
+                      name="ReadOnlyVariables"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIVariablePickerDlg"></property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies a comma-separated list of read/write variables."
+                      name="ReadWriteVariables"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIWriteableVariablePickerDlg"></property>
+                    <property
+                      dataType="System.String"
+                      description="List of breakpoints present on the script."
+                      isArray="true"
+                      name="BreakpointCollection"
+                      typeConverter="NOTBROWSABLE">
+                      <arrayElements
+                        arrayElementCount="0" />
+                    </property>
+                    <property
+                      dataType="System.String"
+                      description="Checksum to match component metedata against compiled codes."
+                      name="MetadataChecksum140"
+                      typeConverter="NOTBROWSABLE">F1</property>
+                    <property
+                      dataType="System.String"
+                      name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
+                  </properties>
+                  <inputs>
+                    <input
+                      refId="Package\Iterate New User Files\Manage Netflix Users\Convert Dates.Inputs[Input 0]"
+                      hasSideEffects="true"
+                      name="Input 0">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Convert Dates.Inputs[Input 0].Columns[Join Date]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Join Date"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Join Date]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Convert Dates.Inputs[Input 0].Columns[Last Payment Date]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Last Payment Date"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Last Payment Date]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Iterate New User Files\Manage Netflix Users\Convert Dates.Outputs[Output 0]"
+                      name="Output 0"
+                      synchronousInputId="Package\Iterate New User Files\Manage Netflix Users\Convert Dates.Inputs[Input 0]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Convert Dates.Outputs[Output 0].Columns[JoinDateConv]"
+                          dataType="date"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Convert Dates.Outputs[Output 0].Columns[JoinDateConv]"
+                          name="JoinDateConv" />
+                        <outputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Convert Dates.Outputs[Output 0].Columns[LastPaymentDateConv]"
+                          dataType="date"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Convert Dates.Outputs[Output 0].Columns[LastPaymentDateConv]"
+                          name="LastPaymentDateConv" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Iterate New User Files\Manage Netflix Users\Is in DB"
+                  componentClassID="Microsoft.Lookup"
+                  contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+                  description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+                  name="Is in DB"
+                  usesDispositions="true"
+                  version="6">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the SQL statement that generates the lookup table."
+                      expressionType="Notify"
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[NetflixUsers]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                      expressionType="Notify"
+                      name="SqlCommandParam"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[NetflixUsers]) [refTable]
+where [refTable].[Id] = ?</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the type of connection used to access the reference dataset."
+                      name="ConnectionType"
+                      typeConverter="LookupConnectionType">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the cache type of the lookup table."
+                      name="CacheType"
+                      typeConverter="CacheType">1</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                      name="NoMatchBehavior"
+                      typeConverter="LookupNoMatchBehavior">1</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                      name="NoMatchCachePercentage">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                      name="MaxMemoryUsage">25</property>
+                    <property
+                      dataType="System.Int64"
+                      description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                      name="MaxMemoryUsage64">25</property>
+                    <property
+                      dataType="System.String"
+                      description="Indicates whether to reference metadata in an XML format."
+                      name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Id" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SubscriptionType" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="MonthlyRevenue" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="JoinDate" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LastPaymentDate" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Country" dataType="DT_WSTR" length="200" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Age" dataType="DT_I2" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Gender" dataType="DT_WSTR" length="20" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Device" dataType="DT_WSTR" length="200" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PlanDuration" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                      name="ParameterMap">#{Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[User ID]};</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1250</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                      name="TreatDuplicateKeysAsError">false</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Iterate New User Files\Manage Netflix Users\Is in DB.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[localhost.BI_NHF1]"
+                      connectionManagerRefId="Package.ConnectionManagers[localhost.BI_NHF1]"
+                      description="Connection manager used to access lookup data."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Iterate New User Files\Manage Netflix Users\Is in DB.Inputs[Lookup Input]"
+                      name="Lookup Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Is in DB.Inputs[Lookup Input].Columns[User ID]"
+                          cachedDataType="i4"
+                          cachedName="User ID"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[User ID]">
+                          <properties>
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table that a column joins."
+                              name="JoinToReferenceColumn">Id</property>
+                            <property
+                              dataType="System.Null"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn" />
+                          </properties>
+                        </inputColumn>
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Iterate New User Files\Manage Netflix Users\Is in DB.Outputs[Lookup Match Output]"
+                      errorOrTruncationOperation="Lookup"
+                      exclusionGroup="1"
+                      name="Lookup Match Output"
+                      synchronousInputId="Package\Iterate New User Files\Manage Netflix Users\Is in DB.Inputs[Lookup Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Iterate New User Files\Manage Netflix Users\Is in DB.Outputs[Lookup No Match Output]"
+                      description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                      exclusionGroup="1"
+                      name="Lookup No Match Output"
+                      synchronousInputId="Package\Iterate New User Files\Manage Netflix Users\Is in DB.Inputs[Lookup Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Iterate New User Files\Manage Netflix Users\Is in DB.Outputs[Lookup Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Lookup Error Output"
+                      synchronousInputId="Package\Iterate New User Files\Manage Netflix Users\Is in DB.Inputs[Lookup Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Is in DB.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Is in DB.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Is in DB.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Is in DB.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Iterate New User Files\Manage Netflix Users\Read Users"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="1038"
+                  name="Read Users"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Netflix Users File Connection Manager]"
+                      connectionManagerRefId="Package.ConnectionManagers[Netflix Users File Connection Manager]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[User ID]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].ExternalColumns[User ID]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[User ID]"
+                          name="User ID"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Subscription Type]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].ExternalColumns[Subscription Type]"
+                          length="50"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Subscription Type]"
+                          name="Subscription Type"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Monthly Revenue]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].ExternalColumns[Monthly Revenue]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Monthly Revenue]"
+                          name="Monthly Revenue"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Join Date]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].ExternalColumns[Join Date]"
+                          length="50"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Join Date]"
+                          name="Join Date"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Last Payment Date]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].ExternalColumns[Last Payment Date]"
+                          length="50"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Last Payment Date]"
+                          name="Last Payment Date"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Country]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].ExternalColumns[Country]"
+                          length="200"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Country]"
+                          name="Country"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Age]"
+                          dataType="i2"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].ExternalColumns[Age]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Age]"
+                          name="Age"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Gender]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].ExternalColumns[Gender]"
+                          length="20"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Gender]"
+                          name="Gender"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Device]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].ExternalColumns[Device]"
+                          length="200"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Device]"
+                          name="Device"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Plan Duration]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].ExternalColumns[Plan Duration]"
+                          length="50"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Plan Duration]"
+                          name="Plan Duration"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].ExternalColumns[User ID]"
+                          dataType="i4"
+                          name="User ID" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].ExternalColumns[Subscription Type]"
+                          dataType="wstr"
+                          length="50"
+                          name="Subscription Type" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].ExternalColumns[Monthly Revenue]"
+                          dataType="i4"
+                          name="Monthly Revenue" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].ExternalColumns[Join Date]"
+                          dataType="wstr"
+                          length="50"
+                          name="Join Date" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].ExternalColumns[Last Payment Date]"
+                          dataType="wstr"
+                          length="50"
+                          name="Last Payment Date" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].ExternalColumns[Country]"
+                          dataType="wstr"
+                          length="200"
+                          name="Country" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].ExternalColumns[Age]"
+                          dataType="i2"
+                          name="Age" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].ExternalColumns[Gender]"
+                          dataType="wstr"
+                          length="20"
+                          name="Gender" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].ExternalColumns[Device]"
+                          dataType="wstr"
+                          length="200"
+                          name="Device" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].ExternalColumns[Plan Duration]"
+                          dataType="wstr"
+                          length="50"
+                          name="Plan Duration" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="65001"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users"
+                  componentClassID="Microsoft.FlatFileDestination"
+                  contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Destination"
+                  localeId="1038"
+                  name="Unprocessed users"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether the data will overwrite or append to the destination file."
+                      name="Overwrite">false</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the text to write to the destination file before any data is written."
+                      expressionType="Notify"
+                      name="Header" />
+                    <property
+                      dataType="System.Boolean"
+                      description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                      name="EscapeQualifier">false</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Unprocessed Users Flat File Connection Manager]"
+                      connectionManagerRefId="Package.ConnectionManagers[Unprocessed Users Flat File Connection Manager]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input]"
+                      hasSideEffects="true"
+                      name="Flat File Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].Columns[User ID]"
+                          cachedDataType="i4"
+                          cachedName="User ID"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].ExternalColumns[User ID]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[User ID]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].Columns[Subscription Type]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Subscription Type"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].ExternalColumns[Subscription Type]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Subscription Type]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].Columns[Monthly Revenue]"
+                          cachedDataType="i4"
+                          cachedName="Monthly Revenue"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].ExternalColumns[Monthly Revenue]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Monthly Revenue]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].Columns[Join Date]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Join Date"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].ExternalColumns[Join Date]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Join Date]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].Columns[Last Payment Date]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Last Payment Date"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].ExternalColumns[Last Payment Date]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Last Payment Date]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].Columns[Country]"
+                          cachedDataType="wstr"
+                          cachedLength="200"
+                          cachedName="Country"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].ExternalColumns[Country]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Country]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].Columns[Age]"
+                          cachedDataType="i2"
+                          cachedName="Age"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].ExternalColumns[Age]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Age]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].Columns[Gender]"
+                          cachedDataType="wstr"
+                          cachedLength="20"
+                          cachedName="Gender"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].ExternalColumns[Gender]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Gender]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].Columns[Device]"
+                          cachedDataType="wstr"
+                          cachedLength="200"
+                          cachedName="Device"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].ExternalColumns[Device]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Device]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].Columns[Plan Duration]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Plan Duration"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].ExternalColumns[Plan Duration]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Plan Duration]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].Columns[JoinDateConv]"
+                          cachedDataType="date"
+                          cachedName="JoinDateConv"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].ExternalColumns[JoinDateConv]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Convert Dates.Outputs[Output 0].Columns[JoinDateConv]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].Columns[LastPaymentDateConv]"
+                          cachedDataType="date"
+                          cachedName="LastPaymentDateConv"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].ExternalColumns[LastPaymentDateConv]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Convert Dates.Outputs[Output 0].Columns[LastPaymentDateConv]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].ExternalColumns[User ID]"
+                          dataType="i4"
+                          name="User ID" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].ExternalColumns[Subscription Type]"
+                          codePage="65001"
+                          dataType="str"
+                          length="50"
+                          name="Subscription Type" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].ExternalColumns[Monthly Revenue]"
+                          dataType="i4"
+                          name="Monthly Revenue" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].ExternalColumns[Join Date]"
+                          dataType="wstr"
+                          length="50"
+                          name="Join Date" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].ExternalColumns[Last Payment Date]"
+                          dataType="wstr"
+                          length="50"
+                          name="Last Payment Date" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].ExternalColumns[Country]"
+                          codePage="65001"
+                          dataType="str"
+                          length="200"
+                          name="Country" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].ExternalColumns[Age]"
+                          dataType="i2"
+                          name="Age" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].ExternalColumns[Gender]"
+                          codePage="65001"
+                          dataType="str"
+                          length="20"
+                          name="Gender" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].ExternalColumns[Device]"
+                          codePage="65001"
+                          dataType="str"
+                          length="200"
+                          name="Device" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].ExternalColumns[Plan Duration]"
+                          codePage="65001"
+                          dataType="str"
+                          length="50"
+                          name="Plan Duration" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].ExternalColumns[JoinDateConv]"
+                          dataType="date"
+                          name="JoinDateConv" />
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input].ExternalColumns[LastPaymentDateConv]"
+                          dataType="date"
+                          name="LastPaymentDateConv" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                </component>
+                <component
+                  refId="Package\Iterate New User Files\Manage Netflix Users\Update Data"
+                  componentClassID="Microsoft.OLEDBCommand"
+                  contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+                  description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+                  name="Update Data"
+                  usesDispositions="true"
+                  version="2">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      expressionType="Notify"
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">UPDATE [dbo].[NetflixUsers]
+   SET 
+       [SubscriptionType] = ?
+      ,[MonthlyRevenue] = ?
+      ,[JoinDate] = ?
+      ,[LastPaymentDate] = ?
+      ,[Country] = ?
+      ,[Age] = ?
+      ,[Gender] = ?
+      ,[Device] = ?
+      ,[PlanDuration] = ?
+ WHERE Id = ?</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1250</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[localhost.BI_NHF1]"
+                      connectionManagerRefId="Package.ConnectionManagers[localhost.BI_NHF1]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input]"
+                      errorOrTruncationOperation="Command Execution"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Command Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].Columns[User ID]"
+                          cachedDataType="i4"
+                          cachedName="User ID"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].ExternalColumns[Param_9]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[User ID]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].Columns[Subscription Type]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Subscription Type"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Subscription Type]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].Columns[Monthly Revenue]"
+                          cachedDataType="i4"
+                          cachedName="Monthly Revenue"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Monthly Revenue]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].Columns[JoinDateConv]"
+                          cachedDataType="date"
+                          cachedName="JoinDateConv"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Convert Dates.Outputs[Output 0].Columns[JoinDateConv]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].Columns[LastPaymentDateConv]"
+                          cachedDataType="date"
+                          cachedName="LastPaymentDateConv"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Convert Dates.Outputs[Output 0].Columns[LastPaymentDateConv]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].Columns[Country]"
+                          cachedDataType="wstr"
+                          cachedLength="200"
+                          cachedName="Country"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].ExternalColumns[Param_4]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Country]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].Columns[Age]"
+                          cachedDataType="i2"
+                          cachedName="Age"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].ExternalColumns[Param_5]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Age]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].Columns[Gender]"
+                          cachedDataType="wstr"
+                          cachedLength="20"
+                          cachedName="Gender"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].ExternalColumns[Param_6]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Gender]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].Columns[Device]"
+                          cachedDataType="wstr"
+                          cachedLength="200"
+                          cachedName="Device"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].ExternalColumns[Param_7]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Device]" />
+                        <inputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].Columns[Plan Duration]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Plan Duration"
+                          externalMetadataColumnId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].ExternalColumns[Param_8]"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output].Columns[Plan Duration]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                          dataType="wstr"
+                          length="50"
+                          name="Param_0">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">65</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                          dataType="i4"
+                          name="Param_1">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">81</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                          dataType="dbDate"
+                          name="Param_2">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">65</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
+                          dataType="dbDate"
+                          name="Param_3">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">65</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].ExternalColumns[Param_4]"
+                          dataType="wstr"
+                          length="200"
+                          name="Param_4">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">65</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].ExternalColumns[Param_5]"
+                          dataType="i2"
+                          name="Param_5">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">81</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].ExternalColumns[Param_6]"
+                          dataType="wstr"
+                          length="20"
+                          name="Param_6">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">65</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].ExternalColumns[Param_7]"
+                          dataType="wstr"
+                          length="200"
+                          name="Param_7">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">65</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].ExternalColumns[Param_8]"
+                          dataType="wstr"
+                          length="50"
+                          name="Param_8">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">65</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input].ExternalColumns[Param_9]"
+                          dataType="i4"
+                          name="Param_9">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">81</property>
+                          </properties>
+                        </externalMetadataColumn>
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Outputs[OLE DB Command Output]"
+                      exclusionGroup="1"
+                      name="OLE DB Command Output"
+                      synchronousInputId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Outputs[OLE DB Command Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Command Error Output"
+                      synchronousInputId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Iterate New User Files\Manage Netflix Users.Paths[Flat File Source Output]"
+                  endId="Package\Iterate New User Files\Manage Netflix Users\Convert Dates.Inputs[Input 0]"
+                  name="Flat File Source Output"
+                  startId="Package\Iterate New User Files\Manage Netflix Users\Read Users.Outputs[Flat File Source Output]" />
+                <path
+                  refId="Package\Iterate New User Files\Manage Netflix Users.Paths[Lookup Match Output]"
+                  endId="Package\Iterate New User Files\Manage Netflix Users\Update Data.Inputs[OLE DB Command Input]"
+                  name="Lookup Match Output"
+                  startId="Package\Iterate New User Files\Manage Netflix Users\Is in DB.Outputs[Lookup Match Output]" />
+                <path
+                  refId="Package\Iterate New User Files\Manage Netflix Users.Paths[Lookup No Match Output]"
+                  endId="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination.Inputs[ADO NET Destination Input]"
+                  name="Lookup No Match Output"
+                  startId="Package\Iterate New User Files\Manage Netflix Users\Is in DB.Outputs[Lookup No Match Output]" />
+                <path
+                  refId="Package\Iterate New User Files\Manage Netflix Users.Paths[Ok]"
+                  endId="Package\Iterate New User Files\Manage Netflix Users\Is in DB.Inputs[Lookup Input]"
+                  name="Ok"
+                  startId="Package\Iterate New User Files\Manage Netflix Users\Conditional Split.Outputs[Ok]" />
+                <path
+                  refId="Package\Iterate New User Files\Manage Netflix Users.Paths[Output 0]"
+                  endId="Package\Iterate New User Files\Manage Netflix Users\Conditional Split.Inputs[Conditional Split Input]"
+                  name="Output 0"
+                  startId="Package\Iterate New User Files\Manage Netflix Users\Convert Dates.Outputs[Output 0]" />
+                <path
+                  refId="Package\Iterate New User Files\Manage Netflix Users.Paths[Required Fields missing]"
+                  endId="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users.Inputs[Flat File Destination Input]"
+                  name="Required Fields missing"
+                  startId="Package\Iterate New User Files\Manage Netflix Users\Conditional Split.Outputs[Required Fields missing]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Iterate New User Files\Move to Archive"
+          DTS:CreationName="Microsoft.FileSystemTask"
+          DTS:Description="File System Task"
+          DTS:DTSID="{71243634-9881-423F-A8A6-306B9B51F836}"
+          DTS:ExecutableType="Microsoft.FileSystemTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Move to Archive"
+          DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOperationType="MoveFile"
+              TaskSourcePath="{5729B259-94AB-4152-B80C-FCBAF3570F41}"
+              TaskDestinationPath="{8DEFFAB6-3EBB-4174-8B9E-B2369BA6EB35}" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Iterate New User Files.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{C993B63D-C24E-407B-9518-C64D66D1654E}"
+          DTS:From="Package\Iterate New User Files\Manage Netflix Users"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\Iterate New User Files\Move to Archive" />
+      </DTS:PrecedenceConstraints>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{E78EFD6F-00CA-4903-98D0-C0A7D99CCA75}"
+          DTS:ObjectName="{E78EFD6F-00CA-4903-98D0-C0A7D99CCA75}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::FilePath" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="177.6,41.6"
+          Id="Package\Iterate New User Files\Manage Netflix Users"
+          TopLeft="59.0999782815587,27.3999990417559" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\Iterate New User Files\Move to Archive"
+          TopLeft="69.0999777351824,124.933332164155" />
+        <EdgeLayout
+          Id="Package\Iterate New User Files.PrecedenceConstraints[Constraint 1]"
+          TopLeft="146.699978008371,68.9999990417559">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55.9333331223991"
+              Start="0,0"
+              End="0,48.4333331223991">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.4333331223991" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="311.2,222.4"
+          Size="311.2,265.6"
+          Id="Package\Iterate New User Files"
+          TopLeft="338.333314847616,67.5999995299181" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Iterate New User Files\Manage Netflix Users">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="153.6,41.6"
+          Id="Package\Iterate New User Files\Manage Netflix Users\Conditional Split"
+          TopLeft="324.999982242783,230.666665702395" />
+        <NodeLayout
+          Size="144.8,41.6"
+          Id="Package\Iterate New User Files\Manage Netflix Users\Convert Dates"
+          TopLeft="579.999968310199,229.333332417276" />
+        <NodeLayout
+          Size="114.4,41.6"
+          Id="Package\Iterate New User Files\Manage Netflix Users\Is in DB"
+          TopLeft="346.666647725636,329.466665015354" />
+        <NodeLayout
+          Size="136.8,41.6"
+          Id="Package\Iterate New User Files\Manage Netflix Users\Update Data"
+          TopLeft="573.333302007783,326.866665033433" />
+        <NodeLayout
+          Size="168,41.6"
+          Id="Package\Iterate New User Files\Manage Netflix Users\Unprocessed users"
+          TopLeft="324.166648954981,136.799999927679" />
+        <NodeLayout
+          Size="179.2,41.6"
+          Id="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination"
+          TopLeft="311.666649637951,451.666664165589" />
+        <NodeLayout
+          Size="132.8,41.6"
+          Id="Package\Iterate New User Files\Manage Netflix Users\Read Users"
+          TopLeft="582.499968173604,135.333333031999" />
+        <EdgeLayout
+          Id="Package\Iterate New User Files\Manage Netflix Users.Paths[Required Fields missing]"
+          TopLeft="404.983315598882,230.666665702395">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,-52.266665774716"
+              Start="0,0"
+              End="0,-44.766665774716">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-44.766665774716" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-52.08298828125,-28.214875856108,104.1659765625,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Iterate New User Files\Manage Netflix Users.Paths[Output 0]"
+          TopLeft="579.999968310199,250.799999059835">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-101.399986067416,0"
+              Start="0,0"
+              End="-93.8999860674161,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-93.8999860674161,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Iterate New User Files\Manage Netflix Users.Paths[Ok]"
+          TopLeft="402.833314984209,272.266665702395">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,57.199999312959"
+              Start="0,0"
+              End="0,49.699999312959">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.699999312959" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-6.971640625,19.9754879377295,13.94328125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Iterate New User Files\Manage Netflix Users.Paths[Lookup No Match Output]"
+          TopLeft="402.566648681793,371.066665015354">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,80.5999991502354"
+              Start="0,0"
+              End="0,73.0999991502354">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,73.0999991502354" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-55.80638671875,30.7453120751177,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Iterate New User Files\Manage Netflix Users.Paths[Lookup Match Output]"
+          TopLeft="461.066647725636,348.966665024394">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="112.266654282147,0"
+              Start="0,0"
+              End="104.766654282147,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="104.766654282147,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="4.19194042232326,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Iterate New User Files\Manage Netflix Users.Paths[Flat File Source Output]"
+          TopLeft="650.649968241901,176.933333031999">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,52.3999993852778"
+              Start="0,0"
+              End="0,44.8999993852778">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44.8999993852778" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Iterate New User Files\Manage Netflix Users\Is in DB">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[NetflixUsers]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Iterate New User Files\Manage Netflix Users\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
