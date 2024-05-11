@@ -1,0 +1,501 @@
+User ID,Subscription Type,Monthly Revenue,Join Date,Last Payment Date,Country,Age,Gender,Device,Plan Duration
+2001,Premium,10,09-07-22,08-07-23,Spain,41,Female,Smart TV,1 Month
+2002,Basic,10,09-07-22,11-07-23,Spain,30,Female,Smartphone,1 Month
+2003,Standard,11,10-07-22,08-07-23,United States,41,Male,Tablet,1 Month
+2004,Standard,12,12-07-22,08-07-23,Canada,48,Female,Laptop,1 Month
+2005,Basic,10,13-07-22,09-07-23,United States,35,Female,Laptop,1 Month
+2006,Premium,13,16-07-22,10-07-23,United States,41,Female,Laptop,1 Month
+2007,Basic,10,17-07-22,07-07-23,Canada,39,Female,Smart TV,1 Month
+2008,Standard,10,26-07-22,09-07-23,United Kingdom,45,Male,Laptop,1 Month
+2009,Premium,10,31-07-22,09-07-23,Australia,41,Male,Laptop,1 Month
+2010,Basic,13,03-08-22,10-07-23,Germany,28,Male,Laptop,1 Month
+2011,Premium,10,15-08-22,07-07-23,France,28,Female,Tablet,1 Month
+2012,Basic,15,18-08-22,10-07-23,Brazil,48,Male,Smart TV,1 Month
+2013,Standard,10,27-08-22,08-07-23,Mexico,40,Female,Smart TV,1 Month
+2014,Standard,12,29-08-22,10-07-23,Spain,39,Male,Smart TV,1 Month
+2015,Basic,12,05-09-22,07-07-23,Italy,27,Male,Smartphone,1 Month
+2016,Premium,10,06-09-22,11-07-23,Spain,32,Female,Smart TV,1 Month
+2017,Basic,10,14-09-22,08-07-23,Spain,38,Male,Laptop,1 Month
+2018,Standard,10,16-09-22,09-07-23,United States,41,Female,Laptop,1 Month
+2019,Premium,10,18-09-22,10-07-23,Canada,32,Female,Laptop,1 Month
+2020,Basic,12,23-09-22,11-07-23,United States,37,Male,Tablet,1 Month
+2021,Basic,12,25-09-22,08-07-23,United States,50,Female,Laptop,1 Month
+2022,Basic,10,06-10-22,09-07-23,Canada,48,Female,Laptop,1 Month
+2023,Standard,11,09-10-22,10-07-23,United Kingdom,37,Male,Tablet,1 Month
+2024,Premium,13,11-10-22,11-07-23,Australia,46,Female,Laptop,1 Month
+2025,Basic,13,12-10-22,08-07-23,Germany,46,Male,Laptop,1 Month
+2026,Basic,15,13-10-22,09-07-23,France,39,Male,Smart TV,1 Month
+2027,Premium,13,17-10-22,10-07-23,Brazil,42,Female,Smart TV,1 Month
+2028,Standard,11,19-10-22,10-07-23,Mexico,41,Female,Smartphone,1 Month
+2029,Standard,10,21-10-22,07-07-23,Spain,28,Male,Smart TV,1 Month
+2030,Basic,14,23-10-22,09-07-23,Italy,43,Male,Tablet,1 Month
+2031,Premium,14,25-10-22,10-07-23,Spain,45,Female,Smart TV,1 Month
+2032,Standard,10,27-10-22,09-07-23,Spain,45,Male,Smart TV,1 Month
+2033,Basic,13,31-10-22,07-07-23,United States,48,Male,Smartphone,1 Month
+2034,Standard,12,02-11-22,09-07-23,Canada,30,Male,Laptop,1 Month
+2035,Premium,11,04-11-22,10-07-23,United States,51,Female,Smart TV,1 Month
+2036,Basic,12,05-11-22,09-07-23,United States,48,Female,Smartphone,1 Month
+2037,Premium,13,06-11-22,07-07-23,Canada,41,Female,Smart TV,1 Month
+2038,Standard,11,07-11-22,10-07-23,United Kingdom,37,Female,Smartphone,1 Month
+2039,Basic,11,08-11-22,09-07-23,Australia,43,Male,Laptop,1 Month
+2040,Standard,15,08-11-22,08-07-23,Germany,51,Male,Laptop,1 Month
+2041,Premium,10,09-11-22,07-07-23,France,34,Female,Smartphone,1 Month
+2042,Basic,10,09-11-22,10-07-23,Brazil,35,Female,Smartphone,1 Month
+2043,Standard,12,05-11-22,09-07-23,Mexico,45,Female,Smart TV,1 Month
+2044,Premium,12,05-11-22,10-07-23,Spain,31,Male,Smart TV,1 Month
+2045,Basic,15,02-11-22,08-07-23,Italy,50,Female,Laptop,1 Month
+2046,Premium,12,30-10-22,09-07-23,Spain,41,Male,Smartphone,1 Month
+2047,Basic,11,30-10-22,09-07-23,Spain,42,Female,Laptop,1 Month
+2048,Standard,11,24-10-22,09-07-23,United States,41,Male,Tablet,1 Month
+2049,Standard,14,08-10-22,08-07-23,Canada,34,Male,Tablet,1 Month
+2050,Basic,13,04-10-22,09-07-23,United States,35,Female,Smartphone,1 Month
+2051,Premium,10,28-09-22,09-07-23,United States,48,Male,Smartphone,1 Month
+2052,Basic,11,22-09-22,09-07-23,Canada,39,Female,Smart TV,1 Month
+2053,Standard,14,19-09-22,09-07-23,United Kingdom,37,Female,Laptop,1 Month
+2054,Premium,10,13-09-22,09-07-23,Australia,31,Male,Tablet,1 Month
+2055,Basic,14,05-09-22,09-07-23,Germany,29,Female,Laptop,1 Month
+2056,Premium,10,20-08-22,09-07-23,France,36,Male,Tablet,1 Month
+2057,Basic,10,10-08-22,08-07-23,Brazil,32,Male,Smartphone,1 Month
+2058,Standard,10,10-08-22,11-07-23,Mexico,31,Female,Smartphone,1 Month
+2059,Standard,14,06-08-22,09-07-23,Spain,31,Male,Laptop,1 Month
+2060,Basic,12,03-08-22,10-07-23,Italy,29,Male,Smart TV,1 Month
+2061,Premium,10,01-08-22,09-07-23,Spain,48,Male,Smart TV,1 Month
+2062,Basic,14,28-07-22,10-07-23,Spain,46,Male,Tablet,1 Month
+2063,Standard,15,22-07-22,09-07-23,United States,35,Female,Smartphone,1 Month
+2064,Premium,11,22-07-22,11-07-23,Canada,37,Female,Tablet,1 Month
+2065,Basic,12,20-07-22,09-07-23,United States,45,Female,Tablet,1 Month
+2066,Premium,15,12-07-22,10-07-23,United States,48,Female,Laptop,1 Month
+2067,Basic,10,12-07-22,09-07-23,Canada,44,Female,Laptop,1 Month
+2068,Standard,14,10-07-22,11-07-23,United Kingdom,47,Female,Laptop,1 Month
+2069,Standard,12,11-07-22,08-07-23,Australia,35,Male,Smart TV,1 Month
+2070,Basic,10,11-07-22,09-07-23,Germany,35,Female,Smartphone,1 Month
+2071,Premium,11,09-07-22,08-07-23,France,35,Male,Smartphone,1 Month
+2072,Basic,15,10-07-22,11-07-23,Brazil,49,Female,Laptop,1 Month
+2073,Standard,11,12-07-22,08-07-23,Mexico,50,Female,Tablet,1 Month
+2074,Premium,14,13-07-22,09-07-23,Spain,44,Male,Smartphone,1 Month
+2075,Basic,14,15-07-22,09-07-23,Italy,47,Female,Tablet,1 Month
+2076,Premium,15,16-07-22,11-07-23,Spain,46,Female,Laptop,1 Month
+2077,Basic,11,19-07-22,08-07-23,Spain,39,Female,Laptop,1 Month
+2078,Standard,15,23-07-22,10-07-23,United States,34,Male,Laptop,1 Month
+2079,Standard,10,28-07-22,09-07-23,Canada,31,Female,Smart TV,1 Month
+2080,Basic,10,14-08-22,11-07-23,United States,46,Female,Laptop,1 Month
+2081,Premium,15,18-08-22,08-07-23,United States,30,Male,Smart TV,1 Month
+2082,Basic,12,23-08-22,12-07-23,Canada,29,Male,Tablet,1 Month
+2083,Standard,12,27-08-22,09-07-23,United Kingdom,42,Male,Tablet,1 Month
+2084,Premium,13,01-09-22,10-07-23,Australia,27,Female,Smartphone,1 Month
+2085,Basic,15,02-09-22,09-07-23,Germany,33,Male,Laptop,1 Month
+2086,Premium,13,04-09-22,12-07-23,France,45,Female,Smart TV,1 Month
+2087,Basic,13,11-09-22,09-07-23,Brazil,50,Male,Tablet,1 Month
+2088,Standard,10,16-09-22,09-07-23,Mexico,42,Female,Tablet,1 Month
+2089,Standard,10,19-09-22,11-07-23,Spain,29,Male,Tablet,1 Month
+2090,Basic,12,20-09-22,12-07-23,Italy,31,Female,Tablet,1 Month
+2091,Premium,13,05-10-22,09-07-23,Spain,42,Female,Smartphone,1 Month
+2092,Basic,10,07-10-22,09-07-23,Spain,44,Female,Laptop,1 Month
+2093,Standard,10,10-10-22,11-07-23,United States,34,Male,Smart TV,1 Month
+2094,Premium,13,12-10-22,11-07-23,Canada,40,Female,Smart TV,1 Month
+2095,Basic,10,13-10-22,08-07-23,United States,38,Male,Smart TV,1 Month
+2096,Basic,15,15-10-22,09-07-23,United States,42,Female,Tablet,1 Month
+2097,Basic,10,17-10-22,11-07-23,Canada,47,Male,Tablet,1 Month
+2098,Standard,15,18-10-22,10-07-23,United Kingdom,29,Female,Tablet,1 Month
+2099,Premium,11,20-10-22,08-07-23,Australia,29,Male,Laptop,1 Month
+2100,Basic,14,22-10-22,10-07-23,Germany,44,Female,Smart TV,1 Month
+2101,Basic,12,25-10-22,11-07-23,France,31,Male,Tablet,1 Month
+2102,Premium,14,27-10-22,09-07-23,Brazil,48,Female,Smartphone,1 Month
+2103,Standard,14,01-11-22,07-07-23,Mexico,32,Female,Laptop,1 Month
+2104,Standard,13,02-11-22,11-07-23,Spain,28,Female,Tablet,1 Month
+2105,Basic,11,04-11-22,10-07-23,Italy,36,Female,Smartphone,1 Month
+2106,Premium,10,06-11-22,09-07-23,Spain,28,Female,Smartphone,1 Month
+2107,Standard,14,07-11-22,07-07-23,Spain,32,Female,Smart TV,1 Month
+2108,Basic,15,08-11-22,10-07-23,United States,50,Female,Smartphone,1 Month
+2109,Standard,12,09-11-22,10-07-23,Canada,44,Male,Tablet,1 Month
+2110,Premium,14,10-11-22,10-07-23,United States,44,Female,Smartphone,1 Month
+2111,Basic,14,09-11-22,09-07-23,United States,47,Male,Laptop,1 Month
+2112,Premium,15,09-11-22,10-07-23,Canada,39,Female,Smart TV,1 Month
+2113,Standard,11,07-11-22,10-07-23,United Kingdom,44,Female,Tablet,1 Month
+2114,Basic,12,03-11-22,10-07-23,Australia,46,Female,Tablet,1 Month
+2115,Standard,10,04-11-22,08-07-23,Germany,31,Female,Laptop,1 Month
+2116,Premium,12,01-11-22,10-07-23,France,33,Female,Tablet,1 Month
+2117,Basic,13,27-10-22,09-07-23,Brazil,27,Male,Laptop,1 Month
+2118,Standard,10,23-10-22,10-07-23,Mexico,34,Male,Smart TV,1 Month
+2119,Premium,14,14-10-22,09-07-23,Spain,48,Male,Laptop,1 Month
+2120,Basic,14,28-09-22,10-07-23,Italy,39,Female,Smart TV,1 Month
+2121,Premium,14,25-09-22,09-07-23,Spain,39,Male,Laptop,1 Month
+2122,Basic,11,23-09-22,10-07-23,Spain,48,Female,Smart TV,1 Month
+2123,Standard,12,23-09-22,09-07-23,United States,37,Female,Tablet,1 Month
+2124,Standard,14,14-09-22,11-07-23,Canada,40,Male,Laptop,1 Month
+2125,Basic,14,05-09-22,09-07-23,United States,41,Female,Smartphone,1 Month
+2126,Premium,12,13-08-22,09-07-23,United States,35,Female,Smartphone,1 Month
+2127,Basic,15,12-08-22,09-07-23,Canada,46,Male,Smartphone,1 Month
+2128,Standard,10,10-08-22,11-07-23,United Kingdom,28,Female,Tablet,1 Month
+2129,Premium,14,05-08-22,09-07-23,Australia,29,Female,Laptop,1 Month
+2130,Basic,10,04-08-22,12-07-23,Germany,46,Female,Tablet,1 Month
+2131,Premium,11,28-07-22,09-07-23,France,35,Male,Laptop,1 Month
+2132,Basic,12,24-07-22,11-07-23,Brazil,27,Male,Smart TV,1 Month
+2133,Standard,11,22-07-22,09-07-23,Mexico,38,Male,Laptop,1 Month
+2134,Standard,13,22-07-22,12-07-23,Spain,43,Male,Smart TV,1 Month
+2135,Basic,15,19-07-22,09-07-23,Italy,31,Female,Smartphone,1 Month
+2136,Premium,13,17-07-22,10-07-23,Spain,29,Female,Tablet,1 Month
+2137,Basic,10,16-07-22,09-07-23,Spain,34,Female,Tablet,1 Month
+2138,Standard,11,12-07-22,12-07-23,United States,39,Male,Smartphone,1 Month
+2139,Premium,14,12-07-22,08-07-23,Canada,34,Female,Smartphone,1 Month
+2140,Basic,14,13-07-22,10-07-23,United States,51,Male,Tablet,1 Month
+2141,Premium,14,13-07-22,09-07-23,United States,47,Female,Tablet,1 Month
+2142,Basic,12,13-07-22,11-07-23,Canada,46,Male,Smartphone,1 Month
+2143,Standard,12,14-07-22,08-07-23,United Kingdom,46,Female,Smartphone,1 Month
+2144,Standard,14,15-07-22,10-07-23,Australia,47,Female,Smartphone,1 Month
+2145,Basic,14,16-07-22,09-07-23,Germany,40,Female,Smart TV,1 Month
+2146,Premium,12,18-07-22,11-07-23,France,41,Female,Tablet,1 Month
+2147,Basic,12,23-07-22,09-07-23,Brazil,30,Female,Smartphone,1 Month
+2148,Standard,12,25-07-22,11-07-23,Mexico,31,Female,Tablet,1 Month
+2149,Premium,14,30-07-22,09-07-23,Spain,42,Male,Smart TV,1 Month
+2150,Basic,12,06-08-22,11-07-23,Italy,46,Female,Tablet,1 Month
+2151,Premium,13,14-08-22,08-07-23,Spain,34,Female,Smart TV,1 Month
+2152,Basic,14,23-08-22,12-07-23,Spain,42,Male,Laptop,1 Month
+2153,Standard,13,27-08-22,09-07-23,United States,45,Male,Tablet,1 Month
+2154,Standard,12,29-08-22,10-07-23,Canada,30,Male,Smart TV,1 Month
+2155,Basic,12,01-09-22,09-07-23,United States,44,Male,Smartphone,1 Month
+2156,Premium,10,07-09-22,13-07-23,United States,37,Male,Smart TV,1 Month
+2157,Basic,10,13-09-22,10-07-23,Canada,43,Male,Smart TV,1 Month
+2158,Standard,12,14-09-22,10-07-23,United Kingdom,46,Male,Smartphone,1 Month
+2159,Premium,11,17-09-22,12-07-23,Australia,40,Female,Tablet,1 Month
+2160,Basic,11,23-09-22,12-07-23,Germany,45,Female,Smartphone,1 Month
+2161,Premium,10,27-09-22,09-07-23,France,48,Female,Smartphone,1 Month
+2162,Basic,10,03-10-22,10-07-23,Brazil,43,Female,Tablet,1 Month
+2163,Standard,13,10-10-22,11-07-23,Mexico,48,Male,Smart TV,1 Month
+2164,Standard,10,12-10-22,11-07-23,Spain,32,Female,Smartphone,1 Month
+2165,Basic,12,14-10-22,08-07-23,Italy,38,Male,Laptop,1 Month
+2166,Premium,13,16-10-22,10-07-23,Spain,50,Male,Smartphone,1 Month
+2167,Basic,11,18-10-22,11-07-23,Spain,33,Female,Laptop,1 Month
+2168,Standard,14,20-10-22,10-07-23,United States,27,Male,Smart TV,1 Month
+2169,Premium,12,22-10-22,08-07-23,Canada,47,Male,Tablet,1 Month
+2170,Basic,12,25-10-22,10-07-23,United States,35,Female,Smart TV,1 Month
+2171,Basic,12,26-10-22,11-07-23,United States,41,Male,Tablet,1 Month
+2172,Basic,14,29-10-22,10-07-23,Canada,39,Female,Smart TV,1 Month
+2173,Standard,13,31-10-22,07-07-23,United Kingdom,46,Female,Smartphone,1 Month
+2174,Premium,14,04-11-22,11-07-23,Australia,33,Female,Smartphone,1 Month
+2175,Basic,11,06-11-22,10-07-23,Germany,30,Male,Laptop,1 Month
+2176,Basic,13,07-11-22,10-07-23,France,46,Male,Tablet,1 Month
+2177,Premium,15,08-11-22,09-07-23,Brazil,42,Female,Tablet,1 Month
+2178,Standard,11,09-11-22,11-07-23,Mexico,28,Female,Tablet,1 Month
+2179,Standard,10,10-11-22,10-07-23,Spain,40,Male,Smart TV,1 Month
+2180,Basic,14,10-11-22,10-07-23,Italy,31,Female,Smart TV,1 Month
+2181,Premium,13,10-11-22,09-07-23,Spain,27,Male,Laptop,1 Month
+2182,Standard,14,09-11-22,10-07-23,Spain,45,Female,Tablet,1 Month
+2183,Basic,10,09-11-22,10-07-23,United States,49,Female,Smart TV,1 Month
+2184,Standard,12,06-11-22,11-07-23,Canada,28,Male,Tablet,1 Month
+2185,Premium,14,03-11-22,08-07-23,United States,33,Male,Smart TV,1 Month
+2186,Basic,15,27-10-22,11-07-23,United States,38,Male,Smart TV,1 Month
+2187,Premium,15,28-10-22,10-07-23,Canada,44,Male,Tablet,1 Month
+2188,Standard,15,18-10-22,10-07-23,United Kingdom,34,Female,Laptop,1 Month
+2189,Basic,15,04-10-22,09-07-23,Australia,35,Male,Laptop,1 Month
+2190,Standard,10,29-09-22,10-07-23,Germany,47,Male,Tablet,1 Month
+2191,Premium,12,29-09-22,10-07-23,France,30,Male,Smartphone,1 Month
+2192,Basic,12,23-09-22,10-07-23,Brazil,50,Female,Smart TV,1 Month
+2193,Standard,12,17-09-22,09-07-23,Mexico,32,Male,Laptop,1 Month
+2194,Premium,14,12-09-22,12-07-23,Spain,36,Female,Smart TV,1 Month
+2195,Basic,14,16-08-22,10-07-23,Italy,40,Female,Smart TV,1 Month
+2196,Premium,15,16-08-22,09-07-23,Spain,39,Male,Smartphone,1 Month
+2197,Basic,11,13-08-22,10-07-23,Spain,28,Male,Smartphone,1 Month
+2198,Standard,12,12-08-22,11-07-23,United States,29,Female,Smart TV,1 Month
+2199,Standard,14,13-08-22,09-07-23,Canada,49,Male,Tablet,1 Month
+2200,Basic,14,30-07-22,12-07-23,United States,40,Male,Laptop,1 Month
+2201,Premium,12,25-07-22,10-07-23,United States,29,Male,Laptop,1 Month
+2202,Basic,14,25-07-22,11-07-23,Canada,35,Female,Tablet,1 Month
+2203,Standard,14,26-07-22,10-07-23,United Kingdom,44,Male,Smartphone,1 Month
+2204,Premium,11,25-07-22,13-07-23,Australia,39,Male,Smart TV,1 Month
+2205,Basic,12,23-07-22,09-07-23,Germany,27,Male,Smart TV,1 Month
+2206,Premium,11,18-07-22,11-07-23,France,31,Male,Smart TV,1 Month
+2207,Basic,13,13-07-22,10-07-23,Brazil,39,Female,Laptop,1 Month
+2208,Standard,13,13-07-22,12-07-23,Mexico,44,Male,Laptop,1 Month
+2209,Standard,10,13-07-22,09-07-23,Spain,48,Female,Tablet,1 Month
+2210,Basic,11,13-07-22,11-07-23,Italy,27,Male,Smartphone,1 Month
+2211,Premium,13,13-07-22,09-07-23,Spain,27,Male,Laptop,1 Month
+2212,Basic,14,14-07-22,11-07-23,Spain,41,Male,Smart TV,1 Month
+2213,Standard,15,15-07-22,09-07-23,United States,44,Female,Tablet,1 Month
+2214,Premium,12,16-07-22,12-07-23,Canada,29,Female,Tablet,1 Month
+2215,Basic,13,18-07-22,09-07-23,United States,42,Female,Smartphone,1 Month
+2216,Premium,15,21-07-22,11-07-23,United States,45,Female,Smart TV,1 Month
+2217,Basic,11,24-07-22,09-07-23,Canada,39,Female,Tablet,1 Month
+2218,Standard,15,29-07-22,12-07-23,United Kingdom,41,Female,Tablet,1 Month
+2219,Standard,10,06-08-22,10-07-23,Australia,41,Female,Laptop,1 Month
+2220,Basic,15,11-08-22,11-07-23,Germany,41,Male,Smartphone,1 Month
+2221,Premium,14,16-08-22,09-07-23,France,47,Female,Smart TV,1 Month
+2222,Basic,10,21-08-22,13-07-23,Brazil,49,Female,Smartphone,1 Month
+2223,Standard,12,22-08-22,10-07-23,Mexico,29,Male,Laptop,1 Month
+2224,Premium,10,24-08-22,10-07-23,Spain,33,Male,Tablet,1 Month
+2225,Basic,13,02-09-22,12-07-23,Italy,45,Female,Smart TV,1 Month
+2226,Premium,13,06-09-22,13-07-23,Spain,41,Female,Laptop,1 Month
+2227,Basic,11,11-09-22,10-07-23,Spain,31,Male,Laptop,1 Month
+2228,Standard,15,16-09-22,10-07-23,United States,51,Male,Tablet,1 Month
+2229,Standard,11,22-09-22,12-07-23,Canada,43,Female,Smartphone,1 Month
+2230,Basic,12,26-09-22,12-07-23,United States,33,Female,Laptop,1 Month
+2231,Premium,10,02-10-22,09-07-23,United States,47,Female,Smartphone,1 Month
+2232,Basic,13,04-10-22,10-07-23,Canada,40,Female,Laptop,1 Month
+2233,Standard,14,09-10-22,12-07-23,United Kingdom,34,Female,Smartphone,1 Month
+2234,Premium,15,11-10-22,11-07-23,Australia,40,Male,Tablet,1 Month
+2235,Basic,15,15-10-22,09-07-23,Germany,38,Male,Laptop,1 Month
+2236,Premium,11,16-10-22,10-07-23,France,47,Male,Smart TV,1 Month
+2237,Basic,13,18-10-22,11-07-23,Brazil,29,Male,Smart TV,1 Month
+2238,Standard,14,21-10-22,10-07-23,Mexico,49,Female,Smartphone,1 Month
+2239,Standard,12,22-10-22,08-07-23,Spain,40,Male,Smart TV,1 Month
+2240,Basic,12,25-10-22,11-07-23,Italy,51,Female,Laptop,1 Month
+2241,Premium,11,29-10-22,11-07-23,Spain,51,Female,Tablet,1 Month
+2242,Basic,12,30-10-22,10-07-23,Spain,50,Female,Smart TV,1 Month
+2243,Standard,10,04-11-22,09-07-23,United States,47,Female,Laptop,1 Month
+2244,Premium,10,05-11-22,12-07-23,Canada,40,Male,Smart TV,1 Month
+2245,Basic,15,07-11-22,10-07-23,United States,35,Female,Smart TV,1 Month
+2246,Basic,15,08-11-22,10-07-23,United States,37,Female,Smart TV,1 Month
+2247,Basic,15,09-11-22,10-07-23,Canada,30,Male,Tablet,1 Month
+2248,Standard,15,10-11-22,11-07-23,United Kingdom,47,Female,Tablet,1 Month
+2249,Premium,12,11-11-22,10-07-23,Australia,35,Male,Smartphone,1 Month
+2250,Basic,14,10-11-22,11-07-23,Germany,33,Male,Tablet,1 Month
+2251,Basic,13,10-11-22,09-07-23,France,51,Female,Laptop,1 Month
+2252,Premium,12,11-11-22,11-07-23,Brazil,31,Female,Tablet,1 Month
+2253,Standard,10,07-11-22,11-07-23,Mexico,48,Female,Laptop,1 Month
+2254,Standard,11,04-11-22,11-07-23,Spain,40,Male,Laptop,1 Month
+2255,Basic,15,31-10-22,09-07-23,Italy,41,Female,Laptop,1 Month
+2256,Premium,15,29-10-22,11-07-23,Spain,41,Male,Laptop,1 Month
+2257,Standard,12,20-10-22,10-07-23,Spain,28,Female,Laptop,1 Month
+2258,Basic,13,14-10-22,11-07-23,United States,45,Female,Laptop,1 Month
+2259,Standard,11,12-10-22,10-07-23,Canada,32,Female,Laptop,1 Month
+2260,Premium,10,01-10-22,11-07-23,United States,31,Male,Tablet,1 Month
+2261,Basic,10,25-09-22,10-07-23,United States,40,Female,Tablet,1 Month
+2262,Premium,10,23-09-22,10-07-23,Canada,40,Female,Smartphone,1 Month
+2263,Standard,14,19-09-22,09-07-23,United Kingdom,50,Male,Tablet,1 Month
+2264,Basic,12,02-09-22,12-07-23,Australia,41,Male,Smartphone,1 Month
+2265,Standard,10,30-08-22,10-07-23,Germany,43,Male,Tablet,1 Month
+2266,Premium,15,16-08-22,09-07-23,France,43,Male,Tablet,1 Month
+2267,Basic,11,15-08-22,10-07-23,Brazil,36,Female,Smartphone,1 Month
+2268,Standard,15,16-08-22,11-07-23,Mexico,48,Male,Smart TV,1 Month
+2269,Premium,15,01-08-22,10-07-23,Spain,33,Female,Smartphone,1 Month
+2270,Basic,14,27-07-22,14-07-23,Italy,30,Female,Smart TV,1 Month
+2271,Premium,14,26-07-22,10-07-23,Spain,37,Female,Laptop,1 Month
+2272,Basic,13,26-07-22,11-07-23,Spain,49,Male,Smart TV,1 Month
+2273,Standard,15,27-07-22,11-07-23,United States,47,Female,Smartphone,1 Month
+2274,Standard,10,26-07-22,13-07-23,Canada,45,Female,Tablet,1 Month
+2275,Basic,11,23-07-22,09-07-23,United States,50,Male,Smart TV,1 Month
+2276,Premium,12,20-07-22,11-07-23,United States,36,Male,Smartphone,1 Month
+2277,Basic,14,14-07-22,10-07-23,Canada,37,Male,Smart TV,1 Month
+2278,Standard,15,14-07-22,12-07-23,United Kingdom,38,Female,Tablet,1 Month
+2279,Premium,10,14-07-22,10-07-23,Australia,40,Male,Smart TV,1 Month
+2280,Basic,13,13-07-22,12-07-23,Germany,38,Female,Smart TV,1 Month
+2281,Premium,14,14-07-22,10-07-23,France,46,Female,Tablet,1 Month
+2282,Basic,10,15-07-22,11-07-23,Brazil,40,Female,Smartphone,1 Month
+2283,Standard,13,16-07-22,10-07-23,Mexico,34,Male,Smart TV,1 Month
+2284,Standard,12,18-07-22,12-07-23,Spain,39,Female,Smartphone,1 Month
+2285,Basic,13,19-07-22,10-07-23,Italy,47,Male,Smartphone,1 Month
+2286,Premium,15,22-07-22,12-07-23,Spain,41,Male,Laptop,1 Month
+2287,Basic,12,27-07-22,09-07-23,Spain,47,Female,Tablet,1 Month
+2288,Standard,13,02-08-22,13-07-23,United States,50,Male,Smartphone,1 Month
+2289,Premium,10,10-08-22,10-07-23,Canada,31,Male,Tablet,1 Month
+2290,Basic,13,15-08-22,11-07-23,United States,41,Male,Smartphone,1 Month
+2291,Premium,11,18-08-22,11-07-23,United States,31,Female,Laptop,1 Month
+2292,Basic,12,20-08-22,14-07-23,Canada,41,Female,Smart TV,1 Month
+2293,Standard,12,23-08-22,11-07-23,United Kingdom,28,Male,Tablet,1 Month
+2294,Standard,14,24-08-22,10-07-23,Australia,40,Female,Smartphone,1 Month
+2295,Basic,11,30-08-22,13-07-23,Germany,34,Female,Smart TV,1 Month
+2296,Premium,10,06-09-22,13-07-23,France,37,Male,Smartphone,1 Month
+2297,Basic,13,13-09-22,10-07-23,Brazil,30,Female,Laptop,1 Month
+2298,Standard,12,18-09-22,10-07-23,Mexico,32,Male,Tablet,1 Month
+2299,Premium,14,22-09-22,12-07-23,Spain,41,Male,Smartphone,1 Month
+2300,Basic,13,28-09-22,12-07-23,Italy,42,Female,Tablet,1 Month
+2301,Premium,13,03-10-22,09-07-23,Spain,40,Male,Laptop,1 Month
+2302,Basic,11,05-10-22,10-07-23,Spain,30,Female,Smartphone,1 Month
+2303,Standard,14,09-10-22,12-07-23,United States,43,Male,Laptop,1 Month
+2304,Standard,14,15-10-22,11-07-23,Canada,31,Female,Tablet,1 Month
+2305,Basic,15,16-10-22,09-07-23,United States,45,Male,Smartphone,1 Month
+2306,Premium,10,18-10-22,11-07-23,United States,33,Male,Smart TV,1 Month
+2307,Basic,14,19-10-22,12-07-23,Canada,41,Male,Smartphone,1 Month
+2308,Standard,11,22-10-22,11-07-23,United Kingdom,37,Male,Smart TV,1 Month
+2309,Premium,12,23-10-22,09-07-23,Australia,40,Female,Smartphone,1 Month
+2310,Basic,10,29-10-22,12-07-23,Germany,36,Male,Tablet,1 Month
+2311,Premium,14,30-10-22,11-07-23,France,28,Male,Smart TV,1 Month
+2312,Basic,12,03-11-22,11-07-23,Brazil,38,Male,Smartphone,1 Month
+2313,Standard,11,04-11-22,09-07-23,Mexico,36,Female,Tablet,1 Month
+2314,Standard,12,05-11-22,12-07-23,Spain,47,Female,Smart TV,1 Month
+2315,Basic,12,07-11-22,10-07-23,Italy,35,Female,Laptop,1 Month
+2316,Premium,14,09-11-22,11-07-23,Spain,29,Female,Tablet,1 Month
+2317,Basic,14,10-11-22,10-07-23,Spain,49,Female,Smart TV,1 Month
+2318,Standard,11,11-11-22,12-07-23,United States,34,Male,Smart TV,1 Month
+2319,Premium,13,11-11-22,11-07-23,Canada,37,Male,Smart TV,1 Month
+2320,Basic,14,10-11-22,11-07-23,United States,50,Male,Smart TV,1 Month
+2321,Basic,12,11-11-22,09-07-23,United States,38,Male,Smart TV,1 Month
+2322,Basic,15,12-11-22,11-07-23,Canada,37,Female,Smart TV,1 Month
+2323,Standard,12,07-11-22,11-07-23,United Kingdom,34,Male,Laptop,1 Month
+2324,Premium,13,04-11-22,11-07-23,Australia,30,Male,Smart TV,1 Month
+2325,Basic,13,03-11-22,11-07-23,Germany,35,Male,Laptop,1 Month
+2326,Basic,12,01-11-22,11-07-23,France,39,Male,Tablet,1 Month
+2327,Premium,10,29-10-22,11-07-23,Brazil,47,Female,Tablet,1 Month
+2328,Standard,13,26-10-22,11-07-23,Mexico,40,Female,Laptop,1 Month
+2329,Standard,12,25-10-22,10-07-23,Spain,33,Male,Smart TV,1 Month
+2330,Basic,12,22-10-22,13-07-23,Italy,32,Female,Smartphone,1 Month
+2331,Premium,13,16-10-22,10-07-23,Spain,32,Male,Smart TV,1 Month
+2332,Standard,10,15-10-22,10-07-23,Spain,30,Female,Smart TV,1 Month
+2333,Basic,12,19-09-22,11-07-23,United States,49,Male,Tablet,1 Month
+2334,Standard,13,16-09-22,12-07-23,Canada,39,Female,Smartphone,1 Month
+2335,Premium,15,08-09-22,10-07-23,United States,45,Male,Laptop,1 Month
+2336,Basic,14,21-08-22,12-07-23,United States,43,Male,Smartphone,1 Month
+2337,Premium,10,20-08-22,10-07-23,Canada,41,Male,Smartphone,1 Month
+2338,Standard,10,10-08-22,11-07-23,United Kingdom,38,Female,Tablet,1 Month
+2339,Basic,13,31-07-22,11-07-23,Australia,34,Female,Smartphone,1 Month
+2340,Standard,15,30-07-22,14-07-23,Germany,38,Male,Laptop,1 Month
+2341,Premium,11,31-07-22,10-07-23,France,48,Male,Tablet,1 Month
+2342,Basic,11,30-07-22,12-07-23,Brazil,38,Female,Smart TV,1 Month
+2343,Standard,10,30-07-22,11-07-23,Mexico,34,Female,Laptop,1 Month
+2344,Premium,10,27-07-22,13-07-23,Spain,44,Female,Tablet,1 Month
+2345,Basic,11,21-07-22,10-07-23,Italy,39,Male,Smartphone,1 Month
+2346,Premium,10,20-07-22,12-07-23,Spain,43,Female,Smartphone,1 Month
+2347,Basic,13,16-07-22,10-07-23,Spain,49,Female,Smart TV,1 Month
+2348,Standard,10,16-07-22,12-07-23,United States,48,Female,Smart TV,1 Month
+2349,Standard,11,14-07-22,11-07-23,Canada,47,Female,Tablet,1 Month
+2350,Basic,12,14-07-22,13-07-23,United States,27,Female,Laptop,1 Month
+2351,Premium,14,15-07-22,10-07-23,United States,40,Female,Smartphone,1 Month
+2352,Basic,11,16-07-22,12-07-23,Canada,43,Female,Smart TV,1 Month
+2353,Standard,15,18-07-22,10-07-23,United Kingdom,30,Female,Laptop,1 Month
+2354,Premium,13,19-07-22,13-07-23,Australia,43,Female,Smart TV,1 Month
+2355,Basic,13,22-07-22,10-07-23,Germany,49,Male,Laptop,1 Month
+2356,Premium,13,25-07-22,12-07-23,France,47,Male,Smartphone,1 Month
+2357,Basic,13,26-07-22,11-07-23,Brazil,33,Male,Smartphone,1 Month
+2358,Standard,15,04-08-22,14-07-23,Mexico,48,Female,Smartphone,1 Month
+2359,Standard,13,12-08-22,11-07-23,Spain,31,Male,Laptop,1 Month
+2360,Basic,13,14-08-22,11-07-23,Italy,30,Male,Tablet,1 Month
+2361,Premium,14,16-08-22,13-07-23,Spain,34,Female,Smartphone,1 Month
+2362,Basic,12,17-08-22,14-07-23,Spain,37,Male,Smartphone,1 Month
+2363,Standard,11,22-08-22,11-07-23,United States,44,Female,Smart TV,1 Month
+2364,Premium,13,26-08-22,11-07-23,Canada,28,Female,Smart TV,1 Month
+2365,Basic,11,06-09-22,13-07-23,United States,47,Male,Smartphone,1 Month
+2366,Premium,11,09-09-22,13-07-23,United States,43,Male,Smart TV,1 Month
+2367,Basic,12,17-09-22,10-07-23,Canada,51,Male,Tablet,1 Month
+2368,Standard,14,19-09-22,11-07-23,United Kingdom,50,Male,Laptop,1 Month
+2369,Standard,11,24-09-22,13-07-23,Australia,40,Female,Smartphone,1 Month
+2370,Basic,11,29-09-22,12-07-23,Germany,31,Female,Laptop,1 Month
+2371,Premium,15,03-10-22,10-07-23,France,29,Female,Smartphone,1 Month
+2372,Basic,15,07-10-22,10-07-23,Brazil,38,Female,Tablet,1 Month
+2373,Standard,14,14-10-22,13-07-23,Mexico,47,Male,Tablet,1 Month
+2374,Premium,15,16-10-22,12-07-23,Spain,30,Male,Tablet,1 Month
+2375,Basic,13,18-10-22,10-07-23,Italy,42,Male,Laptop,1 Month
+2376,Premium,12,19-10-22,12-07-23,Spain,49,Male,Smart TV,1 Month
+2377,Basic,14,20-10-22,12-07-23,Spain,50,Female,Tablet,1 Month
+2378,Standard,11,22-10-22,11-07-23,United States,51,Male,Smart TV,1 Month
+2379,Standard,11,25-10-22,09-07-23,Canada,47,Male,Smartphone,1 Month
+2380,Basic,13,27-10-22,12-07-23,United States,36,Female,Smartphone,1 Month
+2381,Premium,12,30-10-22,11-07-23,United States,30,Female,Laptop,1 Month
+2382,Basic,12,01-11-22,11-07-23,Canada,34,Female,Tablet,1 Month
+2383,Standard,10,05-11-22,10-07-23,United Kingdom,35,Female,Tablet,1 Month
+2384,Premium,14,07-11-22,12-07-23,Australia,30,Male,Smart TV,1 Month
+2385,Basic,14,08-11-22,11-07-23,Germany,30,Male,Tablet,1 Month
+2386,Premium,11,10-11-22,12-07-23,France,41,Female,Smartphone,1 Month
+2387,Basic,15,11-11-22,10-07-23,Brazil,39,Female,Smartphone,1 Month
+2388,Standard,14,12-11-22,12-07-23,Mexico,30,Male,Tablet,1 Month
+2389,Standard,12,11-11-22,12-07-23,Spain,36,Female,Smart TV,1 Month
+2390,Basic,11,11-11-22,12-07-23,Italy,33,Female,Smartphone,1 Month
+2391,Premium,11,12-11-22,10-07-23,Spain,35,Female,Tablet,1 Month
+2392,Basic,14,11-11-22,12-07-23,Spain,46,Male,Tablet,1 Month
+2393,Standard,12,07-11-22,11-07-23,United States,51,Female,Tablet,1 Month
+2394,Premium,13,05-11-22,12-07-23,Canada,42,Female,Smartphone,1 Month
+2395,Basic,13,02-11-22,11-07-23,United States,30,Female,Smart TV,1 Month
+2396,Basic,10,31-10-22,13-07-23,United States,45,Male,Smartphone,1 Month
+2397,Basic,15,29-10-22,11-07-23,Canada,27,Male,Smartphone,1 Month
+2398,Standard,10,25-10-22,11-07-23,United Kingdom,41,Male,Smart TV,1 Month
+2399,Premium,14,23-10-22,10-07-23,Australia,35,Male,Tablet,1 Month
+2400,Basic,10,17-10-22,13-07-23,Germany,30,Male,Laptop,1 Month
+2401,Basic,11,16-10-22,11-07-23,France,35,Female,Laptop,1 Month
+2402,Premium,12,05-10-22,11-07-23,Brazil,47,Female,Smartphone,1 Month
+2403,Standard,15,17-09-22,11-07-23,Mexico,41,Male,Laptop,1 Month
+2404,Standard,12,17-09-22,12-07-23,Spain,48,Female,Tablet,1 Month
+2405,Basic,12,06-09-22,11-07-23,Italy,32,Female,Smart TV,1 Month
+2406,Premium,13,30-08-22,15-07-23,Spain,35,Female,Smart TV,1 Month
+2407,Standard,11,29-08-22,11-07-23,Spain,31,Female,Smartphone,1 Month
+2408,Basic,12,25-08-22,13-07-23,United States,45,Female,Smartphone,1 Month
+2409,Standard,14,03-08-22,11-07-23,Canada,38,Female,Laptop,1 Month
+2410,Premium,12,02-08-22,14-07-23,United States,34,Male,Smartphone,1 Month
+2411,Basic,15,02-08-22,11-07-23,United States,37,Female,Smartphone,1 Month
+2412,Premium,12,01-08-22,13-07-23,Canada,27,Female,Smart TV,1 Month
+2413,Standard,13,31-07-22,11-07-23,United Kingdom,44,Female,Tablet,1 Month
+2414,Basic,10,22-07-22,13-07-23,Australia,46,Male,Smart TV,1 Month
+2415,Standard,14,22-07-22,11-07-23,Germany,37,Male,Smart TV,1 Month
+2416,Premium,14,19-07-22,13-07-23,France,44,Male,Tablet,1 Month
+2417,Basic,15,17-07-22,11-07-23,Brazil,29,Male,Smart TV,1 Month
+2418,Standard,13,16-07-22,13-07-23,Mexico,28,Female,Laptop,1 Month
+2419,Premium,14,16-07-22,11-07-23,Spain,50,Male,Smart TV,1 Month
+2420,Basic,13,16-07-22,13-07-23,Italy,39,Male,Laptop,1 Month
+2421,Premium,10,16-07-22,11-07-23,Spain,34,Female,Smart TV,1 Month
+2422,Basic,14,17-07-22,12-07-23,Spain,40,Male,Smart TV,1 Month
+2423,Standard,12,19-07-22,11-07-23,United States,30,Male,Laptop,1 Month
+2424,Standard,14,20-07-22,14-07-23,Canada,41,Female,Laptop,1 Month
+2425,Basic,12,21-07-22,10-07-23,United States,39,Male,Tablet,1 Month
+2426,Premium,15,23-07-22,12-07-23,United States,51,Male,Smartphone,1 Month
+2427,Basic,15,03-08-22,14-07-23,Canada,28,Female,Smartphone,1 Month
+2428,Standard,12,06-08-22,15-07-23,United Kingdom,30,Female,Tablet,1 Month
+2429,Premium,11,10-08-22,12-07-23,Australia,30,Female,Smartphone,1 Month
+2430,Basic,10,13-08-22,11-07-23,Germany,44,Female,Tablet,1 Month
+2431,Premium,12,15-08-22,14-07-23,France,29,Female,Smart TV,1 Month
+2432,Basic,11,19-08-22,14-07-23,Brazil,28,Female,Tablet,1 Month
+2433,Standard,10,22-08-22,11-07-23,Mexico,48,Male,Tablet,1 Month
+2434,Standard,11,28-08-22,11-07-23,Spain,42,Female,Smart TV,1 Month
+2435,Basic,14,06-09-22,13-07-23,Italy,39,Male,Smartphone,1 Month
+2436,Premium,14,16-09-22,13-07-23,Spain,44,Female,Smart TV,1 Month
+2437,Basic,11,18-09-22,11-07-23,Spain,49,Male,Smart TV,1 Month
+2438,Standard,12,23-09-22,11-07-23,United States,49,Female,Smart TV,1 Month
+2439,Premium,10,28-09-22,13-07-23,Canada,36,Female,Laptop,1 Month
+2440,Basic,14,29-09-22,12-07-23,United States,50,Female,Laptop,1 Month
+2441,Premium,10,07-10-22,10-07-23,United States,49,Female,Smartphone,1 Month
+2442,Basic,11,08-10-22,12-07-23,Canada,36,Male,Smartphone,1 Month
+2443,Standard,13,10-10-22,13-07-23,United Kingdom,28,Female,Laptop,1 Month
+2444,Standard,15,14-10-22,12-07-23,Australia,45,Female,Smartphone,1 Month
+2445,Basic,14,16-10-22,10-07-23,Germany,31,Female,Smartphone,1 Month
+2446,Premium,11,18-10-22,12-07-23,France,46,Male,Tablet,1 Month
+2447,Basic,14,21-10-22,12-07-23,Brazil,27,Male,Tablet,1 Month
+2448,Standard,13,24-10-22,12-07-23,Mexico,43,Male,Tablet,1 Month
+2449,Premium,10,27-10-22,09-07-23,Spain,51,Female,Smart TV,1 Month
+2450,Basic,13,29-10-22,13-07-23,Italy,47,Female,Smartphone,1 Month
+2451,Premium,15,31-10-22,12-07-23,Spain,48,Female,Tablet,1 Month
+2452,Basic,14,04-11-22,13-07-23,Spain,31,Female,Tablet,1 Month
+2453,Standard,15,06-11-22,11-07-23,United States,48,Female,Smartphone,1 Month
+2454,Standard,10,08-11-22,13-07-23,Canada,36,Male,Smartphone,1 Month
+2455,Basic,10,09-11-22,11-07-23,United States,38,Female,Tablet,1 Month
+2456,Premium,13,11-11-22,13-07-23,United States,39,Male,Smartphone,1 Month
+2457,Basic,11,12-11-22,10-07-23,Canada,48,Male,Tablet,1 Month
+2458,Standard,12,12-11-22,12-07-23,United Kingdom,30,Female,Smart TV,1 Month
+2459,Premium,12,12-11-22,12-07-23,Australia,30,Male,Smart TV,1 Month
+2460,Basic,15,12-11-22,13-07-23,Germany,35,Female,Smart TV,1 Month
+2461,Premium,13,13-11-22,12-07-23,France,41,Male,Laptop,1 Month
+2462,Basic,11,13-11-22,13-07-23,Brazil,40,Female,Smart TV,1 Month
+2463,Standard,10,12-11-22,11-07-23,Mexico,50,Male,Smart TV,1 Month
+2464,Standard,12,05-11-22,12-07-23,Spain,42,Female,Smartphone,1 Month
+2465,Basic,15,03-11-22,11-07-23,Italy,30,Male,Tablet,1 Month
+2466,Premium,12,30-10-22,14-07-23,Spain,34,Male,Laptop,1 Month
+2467,Basic,15,26-10-22,11-07-23,Spain,40,Female,Smartphone,1 Month
+2468,Standard,14,24-10-22,12-07-23,United States,47,Female,Smartphone,1 Month
+2469,Premium,12,24-10-22,11-07-23,Canada,36,Male,Laptop,1 Month
+2470,Basic,13,20-10-22,13-07-23,United States,50,Female,Tablet,1 Month
+2471,Basic,10,17-10-22,11-07-23,United States,46,Male,Smartphone,1 Month
+2472,Basic,14,29-09-22,14-07-23,Canada,27,Female,Tablet,1 Month
+2473,Standard,12,28-09-22,11-07-23,United Kingdom,39,Female,Laptop,1 Month
+2474,Premium,10,06-09-22,12-07-23,Australia,49,Male,Smart TV,1 Month
+2475,Basic,12,05-09-22,11-07-23,Germany,37,Female,Tablet,1 Month
+2476,Basic,13,31-08-22,15-07-23,France,28,Male,Tablet,1 Month
+2477,Premium,12,30-08-22,12-07-23,Brazil,40,Male,Laptop,1 Month
+2478,Standard,10,16-08-22,13-07-23,Mexico,47,Male,Tablet,1 Month
+2479,Standard,11,16-08-22,11-07-23,Spain,51,Female,Laptop,1 Month
+2480,Basic,13,07-08-22,14-07-23,Italy,47,Male,Laptop,1 Month
+2481,Premium,10,05-08-22,12-07-23,Spain,33,Female,Laptop,1 Month
+2482,Standard,13,06-08-22,14-07-23,Spain,37,Female,Laptop,1 Month
+2483,Basic,15,28-07-22,11-07-23,United States,42,Male,Laptop,1 Month
+2484,Standard,11,29-07-22,13-07-23,Canada,50,Female,Smart TV,1 Month
+2485,Premium,14,25-07-22,12-07-23,United States,47,Female,Tablet,1 Month
+2486,Basic,10,25-07-22,14-07-23,United States,40,Female,Smartphone,1 Month
+2487,Premium,11,25-07-22,12-07-23,Canada,35,Male,Smart TV,1 Month
+2488,Standard,11,18-07-22,13-07-23,United Kingdom,29,Female,Smartphone,1 Month
+2489,Basic,11,17-07-22,12-07-23,Australia,48,Female,Smartphone,1 Month
+2490,Standard,10,17-07-22,15-07-23,Germany,35,Male,Smart TV,1 Month
+2491,Premium,13,18-07-22,11-07-23,France,41,Female,Smartphone,1 Month
+2492,Basic,14,19-07-22,12-07-23,Brazil,29,Female,Laptop,1 Month
+2493,Standard,11,20-07-22,11-07-23,Mexico,33,Male,Smart TV,1 Month
+2494,Premium,12,21-07-22,15-07-23,Spain,36,Male,Smart TV,1 Month
+2495,Basic,15,23-07-22,12-07-23,Italy,43,Female,Laptop,1 Month
+2496,Premium,14,25-07-22,12-07-23,Spain,28,Female,Smart TV,1 Month
+2497,Basic,15,04-08-22,14-07-23,Spain,33,Female,Smart TV,1 Month
+2498,Standard,12,09-08-22,15-07-23,United States,38,Male,Laptop,1 Month
+2499,Standard,13,12-08-22,12-07-23,Canada,48,Female,Tablet,1 Month
+2500,Basic,15,13-08-22,12-07-23,United States,35,Female,Smart TV,1 Month

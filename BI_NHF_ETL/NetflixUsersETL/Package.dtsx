@@ -11,8 +11,8 @@
   DTS:LocaleID="1038"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="73"
-  DTS:VersionGUID="{A6601BD8-88C6-4A1C-BB99-45CA310ADB63}">
+  DTS:VersionBuild="76"
+  DTS:VersionGUID="{9A5773C7-E918-4FEE-916B-235FC76F3F78}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -62,7 +62,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="User ID"
-              DTS:DTSID="{8CE212D6-E61C-4146-B79E-ABF21EF0658C}"
+              DTS:DTSID="{93D8E937-E1A0-4804-9FFD-2BCDA8F160F1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -71,7 +71,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Subscription Type"
-              DTS:DTSID="{70D3B29A-FE0E-4D89-A117-BE56762C4B5A}"
+              DTS:DTSID="{F34AC9D5-374B-4AB1-BB85-C1FF2CC5165B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -79,7 +79,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Monthly Revenue"
-              DTS:DTSID="{025A7BD9-3AE0-4FBB-ACEB-C4234589F92D}"
+              DTS:DTSID="{01EAEF02-216E-46D5-867C-D66EBC13BAE7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -88,7 +88,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Join Date"
-              DTS:DTSID="{DB970617-E5F6-4866-9940-D57986E5F725}"
+              DTS:DTSID="{C4DB5E72-7010-40D4-915F-2B435183201F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -97,7 +97,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Last Payment Date"
-              DTS:DTSID="{16AD325B-DC82-4FDC-B1AA-6A8FC00D403C}"
+              DTS:DTSID="{7E370673-BC3B-4500-ABB4-ABDBD0A908B6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -106,7 +106,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Country"
-              DTS:DTSID="{62D21F10-65D1-4E18-8381-57307E16BBF7}"
+              DTS:DTSID="{37F4AE4A-044E-4C52-9487-B08A6307FAE0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -114,7 +114,7 @@
               DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="Age"
-              DTS:DTSID="{61FF44C9-A407-43CD-A26A-DC053E1F9BD3}"
+              DTS:DTSID="{563A9702-6EF0-4794-8D24-6CA92EA4CD07}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -123,7 +123,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Gender"
-              DTS:DTSID="{F991F2EF-42BC-4C14-9A79-040DD8552446}"
+              DTS:DTSID="{D7FFC1F6-E3A9-4CD6-A489-F885B2DBB9E7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -132,7 +132,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Device"
-              DTS:DTSID="{5E474152-A29F-4454-B0FF-232EAD4D8535}"
+              DTS:DTSID="{7C79E83C-2DF5-4AF9-AEBC-FAEAF7DEBAD6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -141,7 +141,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Plan Duration"
-              DTS:DTSID="{3D8170D9-AF35-4374-ABE0-D709EC437681}"
+              DTS:DTSID="{C57C9DC8-8F12-4FCE-87D4-C5E8481FAD6C}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -167,7 +167,7 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:FileUsageType="2"
-          DTS:ConnectionString="D:\BME-VIK\MsC\3felev\ÜzletiIntelligencia labor\NHF\netflix-users_archived" />
+          DTS:ConnectionString="D:\BME-VIK\MsC\3felev\ÜzletiIntelligencia labor\NHF\BI_NHF\netflix-users_archived" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -183,7 +183,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="D:\BME-VIK\MsC\3felev\ÜzletiIntelligencia labor\NHF\output\unprocessed_users.txt">
+          DTS:ConnectionString="D:\BME-VIK\MsC\3felev\ÜzletiIntelligencia labor\NHF\BI_NHF\output\unprocessed_users.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -191,7 +191,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="User ID"
-              DTS:DTSID="{B3C8BA1E-6639-423E-8E75-B33F945CBE5A}"
+              DTS:DTSID="{0DCB0D94-9E39-4D6B-881F-FFB6482A0295}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -200,7 +200,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Subscription Type"
-              DTS:DTSID="{D2B22E10-0A54-47B4-892A-E87F08E182FF}"
+              DTS:DTSID="{6CDA7E30-11A9-4762-82B3-7522BB775F99}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -208,7 +208,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Monthly Revenue"
-              DTS:DTSID="{4AA24BCB-519A-4680-9E3A-0C20CD82A790}"
+              DTS:DTSID="{B155E87B-1492-4BF8-B9DF-87E389843C05}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -217,7 +217,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Join Date"
-              DTS:DTSID="{F0A7C75A-84E0-4D5C-840B-901D51FF7781}"
+              DTS:DTSID="{0D0CBB49-7C4A-400F-B66F-D2380945F352}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -226,7 +226,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Last Payment Date"
-              DTS:DTSID="{BB714CC9-3376-4F09-83AB-01586E57F8F7}"
+              DTS:DTSID="{A0E01763-FD20-4D6B-B2EB-65579DB950F3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -235,7 +235,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Country"
-              DTS:DTSID="{019AD3A7-D38E-4020-8E20-1F29113FE254}"
+              DTS:DTSID="{89ACE4C0-8878-49AF-A2A8-8BF4D5FCAAAD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -243,7 +243,7 @@
               DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="Age"
-              DTS:DTSID="{933E099A-99E7-4954-9AD7-171B55FC61F0}"
+              DTS:DTSID="{14DDD843-CB98-4837-BC8D-0B5A9D62CA13}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -252,7 +252,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Gender"
-              DTS:DTSID="{DC6246B9-C59C-4E2C-84B7-435B7549796C}"
+              DTS:DTSID="{B4DF76B0-DE38-449B-94F8-68980F027079}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -261,7 +261,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Device"
-              DTS:DTSID="{319DDB75-1F54-4598-873D-AD8F95CAB11D}"
+              DTS:DTSID="{2095EA04-4C10-4366-8695-291316DD26CB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -270,7 +270,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Plan Duration"
-              DTS:DTSID="{E30111F6-40AC-455E-9A70-C05BF98680B5}"
+              DTS:DTSID="{DF31942C-8C21-4D6B-964A-522ABAF37FAF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -278,7 +278,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="JoinDateConv"
-              DTS:DTSID="{415CAB26-1654-4366-A3B2-28AF54AF7286}"
+              DTS:DTSID="{E76478C8-2217-4CE1-A1F7-8C6415E0275B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -286,7 +286,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="LastPaymentDateConv"
-              DTS:DTSID="{1705E0A8-EE8B-406F-AB85-BAF1EFC86A8A}"
+              DTS:DTSID="{172852DF-C8BE-4B7A-9AC6-6B6AC48D6EE2}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -320,7 +320,7 @@
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
-              Folder="D:\BME-VIK\MsC\3felev\ÜzletiIntelligencia labor\NHF\netflix-users" />
+              Folder="D:\BME-VIK\MsC\3felev\ÜzletiIntelligencia labor\NHF\BI_NHF\netflix-users" />
             <FEFEProperty
               FileSpec="*.csv" />
             <FEFEProperty
@@ -2552,8 +2552,8 @@ where [refTable].[Id] = ?</property>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{E78EFD6F-00CA-4903-98D0-C0A7D99CCA75}"
-          DTS:ObjectName="{E78EFD6F-00CA-4903-98D0-C0A7D99CCA75}"
+          DTS:DTSID="{F98C3574-8D04-41F3-BA8D-D5661560C66B}"
+          DTS:ObjectName="{F98C3574-8D04-41F3-BA8D-D5661560C66B}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::FilePath" />
       </DTS:ForEachVariableMappings>
@@ -2758,7 +2758,7 @@ where [refTable].[Id] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="4.19194042232326,5,96.3827734375,11.609375"
+              BoundingBox="4.1919404223235,5,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>

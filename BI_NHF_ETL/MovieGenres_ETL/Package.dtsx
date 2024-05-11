@@ -11,8 +11,8 @@
   DTS:LocaleID="1038"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="11"
-  DTS:VersionGUID="{A0C4870F-31A3-409C-9370-1D83B0A7D734}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{3564BFB6-8109-4E10-B4A1-895FBED7C645}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -51,7 +51,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="D:\BME-VIK\MsC\3felev\ÜzletiIntelligencia labor\NHF\output\unprocessed_genre.txt">
+          DTS:ConnectionString="D:\BME-VIK\MsC\3felev\ÜzletiIntelligencia labor\NHF\BI_NHF\output\unprocessed_genre.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -59,7 +59,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="id"
-              DTS:DTSID="{8F52D66A-A4AA-45CE-857F-3CB8A64C3AB9}"
+              DTS:DTSID="{77C328B4-77F2-467F-90BB-1BB4061E4FAB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -68,7 +68,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="synonyms"
-              DTS:DTSID="{D4402DA4-36F0-4652-9370-E21D73738E05}"
+              DTS:DTSID="{89455FF7-E674-47D3-AF3E-E30958C2BCD2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -77,7 +77,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="type"
-              DTS:DTSID="{CB50B650-EB49-45D7-A96D-0A2E6366E317}"
+              DTS:DTSID="{51C164DE-3B79-4975-80D3-3F338F8A10F4}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -97,7 +97,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="D:\BME-VIK\MsC\3felev\ÜzletiIntelligencia labor\NHF\movie_genres_synonyms.csv">
+          DTS:ConnectionString="D:\BME-VIK\MsC\3felev\ÜzletiIntelligencia labor\NHF\BI_NHF\data\movie_genres_synonyms.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -105,7 +105,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="id"
-              DTS:DTSID="{C26EC257-2D8E-4057-957C-A7708DCA8EFF}"
+              DTS:DTSID="{C5BB19A5-4099-49FB-AE06-AC160B4CB059}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -114,7 +114,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="type"
-              DTS:DTSID="{B389B9BB-C354-427E-BAF1-19B376935A4D}"
+              DTS:DTSID="{E4A9B94A-60BC-46F3-92CE-84594F342691}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -123,7 +123,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="synonyms"
-              DTS:DTSID="{4248530E-4552-45FC-93B7-4585234B449E}"
+              DTS:DTSID="{45ACF2D0-9382-4DF0-B89C-81D01C02DBCD}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -695,6 +695,34 @@
           Size="168,41.6"
           Id="Package\Add Movie Genres\Read MovieGenres"
           TopLeft="527.499971178672,44.1999996926387" />
+        <NodeLayout
+          Size="124,41.6"
+          Id="Package\Add Movie Genres\Add to Db"
+          TopLeft="549.066636798118,261.733331513272" />
+        <EdgeLayout
+          Id="Package\Add Movie Genres.Paths[OK]"
+          TopLeft="610.116637549385,184.599999005596">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,77.1333325076764"
+              Start="0,0"
+              End="0,69.6333325076764">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,69.6333325076764" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-7.3964453125,30.0300451600882,14.792890625,9.5732421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Add Movie Genres.Paths[Missing required field]"
           TopLeft="699.166638300652,164.666665666236">
@@ -739,34 +767,6 @@
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="124,41.6"
-          Id="Package\Add Movie Genres\Add to Db"
-          TopLeft="549.066636798118,261.733331513272" />
-        <EdgeLayout
-          Id="Package\Add Movie Genres.Paths[OK]"
-          TopLeft="610.116637549385,184.599999005596">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,77.1333325076764"
-              Start="0,0"
-              End="0,69.6333325076764">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,69.6333325076764" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-7.3964453125,30.0300451600882,14.792890625,9.5732421875"
-              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
